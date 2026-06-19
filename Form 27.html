@@ -71,14 +71,14 @@
             --elev-2: 0 12px 28px rgba(0, 0, 0, 0.6);
         }
 
-        body { 
-            background: var(--bg); 
-            font-family: var(--font); 
-            color: var(--text); 
-            line-height: 1.6; 
-            font-size: 15px; 
-            overflow-x: hidden; 
-            transition: background-color 0.3s, color 0.3s; 
+        body {
+            background: var(--bg);
+            font-family: var(--font);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 15px;
+            overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
             -webkit-font-smoothing: antialiased;
         }
         .container { max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; min-height: 100vh; padding-bottom: 70px; }
@@ -126,7 +126,7 @@
         .unified-hero { background: radial-gradient(circle at 10% -20%, rgba(33, 174, 217, .35), transparent 60%), linear-gradient(145deg, #21AED9 0%, #157999 100%); color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 48px 60px; border-radius: 0 0 32px 32px; margin-bottom: 40px; box-shadow: var(--elev-2); gap: 30px; margin-top: 0; }
         .hero-text h1 { font-size: 2.2em; margin-bottom: 12px; color: #fff; letter-spacing: -0.5px; }
         .hero-text p { font-size: 1.1em; color: #e0f2fe; opacity: 0.9; max-width: 600px; line-height: 1.6; }
-        
+
         .hero-brand { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
         .uworld-logo-img { width: 90px; height: 90px; border-radius: 50%; object-fit: contain; background: #fff; padding: 6px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); animation: float 6s ease-in-out infinite; }
         .hero-brand h4 { font-size: 1.1em; color: #fff; opacity: 0.95; font-weight: 600; max-width: 250px; line-height: 1.4; margin: 0; }
@@ -227,7 +227,7 @@
             .learning-mode .answer-option:hover:not(.selected):not(.disabled):not(.eliminated):not(.correct):not(.incorrect),
             .exam-mode .answer-option:hover:not(.disabled):not(.selected):not(.eliminated) { border-color: var(--primary); background: var(--hover-bg); }
         }
-        
+
         .answer-option.selected { border-color: var(--primary); background: var(--selected-bg); box-shadow: 0 0 0 1px var(--primary); z-index: 2; }
         .answer-option.correct { border-color: var(--success); background: rgba(43, 179, 150, 0.08); box-shadow: 0 0 0 1px var(--success); }
         .answer-option.incorrect { border-color: var(--danger); background: rgba(239, 68, 68, 0.08); box-shadow: 0 0 0 1px var(--danger); }
@@ -235,7 +235,7 @@
         .answer-option.eliminated { opacity: 0.4 !important; filter: grayscale(100%); background: transparent !important; border-color: var(--border) !important; box-shadow: none !important; }
         .answer-option.eliminated .option-text, .answer-option.eliminated .option-text * { text-decoration: line-through !important; color: var(--muted) !important; }
         .answer-option.eliminated .option-letter { text-decoration: line-through !important; background: var(--border) !important; color: var(--muted) !important; border-color: var(--border) !important; }
-        
+
         .answer-option .option-letter { background: var(--bg); color: var(--muted); width: 32px; min-width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-top: 2px; transition: background-color 0.2s, color 0.2s; }
         .answer-option.selected .option-letter { background: var(--primary); color: #fff; border-color: var(--primary); }
         .answer-option.correct .option-letter { background: var(--success); color: #fff; border-color: var(--success); }
@@ -253,13 +253,13 @@
         /* Navigation (Sticky Bottom Bar) */
         .navigation { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); padding: 12px 16px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; z-index: 900; box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05); margin-top: 0; transition: transform 0.4s ease, opacity 0.4s ease; padding-bottom: calc(12px + env(safe-area-inset-bottom)); gap: 8px; flex-wrap: nowrap;}
         html.dark .navigation { background: rgba(30, 41, 59, 0.98); box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5); }
-        
+
         .navigation button { flex: 1; padding: 12px 8px; font-size: 13px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; background: var(--card); color: var(--text-strong); font-weight: 700; transition: background-color 0.2s; font-family: inherit; outline: none; margin: 0; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .navigation button:active:not(:disabled) { background: var(--hover-bg); transform: scale(0.95); }
         .navigation button:disabled { opacity: 0.5; cursor: not-allowed; background: var(--bg); border-color: var(--border); }
         .navigation #next-btn { background: var(--primary) !important; color: #fff !important; border-color: var(--primary) !important; }
         .navigation #next-btn:active:not(:disabled) { background: var(--primary-hover) !important; }
-        
+
         @media (min-width: 768px) {
             .navigation { padding: 16px 40px; gap: 16px; padding-bottom: 16px;}
             .navigation button { flex: none; padding: 12px 24px; font-size: 14px; }
@@ -271,14 +271,14 @@
         #btn-suspend { background: transparent !important; border: 2px dashed var(--warning) !important; color: var(--warning) !important;}
         @media (min-width: 768px) { #btn-suspend { order: -1; margin-right: auto; } }
         #btn-suspend:hover, #btn-suspend:active { background: var(--warning) !important; color: #fff !important; border-style: solid !important; }
-        
+
         .q-tools-bar { display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
         .q-tool-btn { background: var(--surface); border: 2px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 700; color: var(--muted); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background-color 0.2s; box-shadow: var(--elev-1); font-family: inherit; }
         .q-tool-btn:active { transform: scale(0.95); }
         @media (hover: hover) { .q-tool-btn:hover { background: var(--hover-bg); color: var(--text-strong); } }
         .q-tool-btn.active-flag { background: rgba(239, 68, 68, 0.1); border-color: var(--danger); color: var(--danger); }
         .q-tool-btn.active-note { background: rgba(245, 158, 11, 0.1); border-color: var(--warning); color: var(--warning); }
-        
+
         .ma-note-textarea { width: 100%; height: 200px; padding: 16px; border: none; background: transparent; color: var(--text-strong); font-family: inherit; font-size: 16px; resize: vertical; outline: none; line-height: 1.6; }
         .ma-note-textarea:focus { background: var(--hover-bg); border-radius: 12px; }
 
@@ -324,17 +324,17 @@
         #ma-hl-palette { position: absolute; display: none; padding: 8px 12px; background: var(--surface); border-radius: 999px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 0 1px var(--border); z-index: 999999; align-items: center; gap: 8px; animation: hl-pop 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform: translateY(-120%); }
         html.dark #ma-hl-palette { background: #1e293b; border-color: #334155; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); }
         @media (min-width: 768px) { #ma-hl-palette { transform: none; } }
-        
+
         @keyframes hl-pop { 0% { opacity: 0; transform: scale(0.8) translateY(10px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
         .ma-hl-btn { width: 26px; height: 26px; border-radius: 50%; cursor: pointer; box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1); transition: transform 0.2s; border: 3px solid transparent; }
         .ma-hl-btn:active { transform: scale(0.9); }
         @media (min-width: 768px) { .ma-hl-btn:hover { transform: scale(1.3); border-color: var(--text-strong); z-index: 2; } }
-        
+
         .ma-hl-btn.yellow { background: #fde047; } .ma-hl-btn.green { background: #4ade80; } .ma-hl-btn.blue { background: #60a5fa; } .ma-hl-btn.pink { background: #f472b6; } .ma-hl-btn.orange { background: #fb923c; } .ma-hl-btn.purple { background: #c084fc; }
         .ma-hl-clear { margin-left: 6px; padding-left: 12px; border-left: 2px solid var(--border); font-size: 13px; font-weight: 800; color: var(--danger); cursor: pointer; transition: color 0.2s; display: flex; align-items: center; height: 24px; }
         .ma-hl-clear:active { opacity: 0.5; }
         @media (min-width: 768px) { .ma-hl-clear:hover { color: #be123c; } }
-        
+
         .hl-yellow { background-color: rgba(253, 224, 71, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; } .hl-green { background-color: rgba(74, 222, 128, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; } .hl-blue { background-color: rgba(96, 165, 250, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; } .hl-pink { background-color: rgba(244, 114, 182, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; } .hl-orange { background-color: rgba(251, 146, 60, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; } .hl-purple { background-color: rgba(192, 132, 252, 0.6); border-radius: 3px; padding: 2px 0; color: inherit; }
         html.dark .hl-yellow { background-color: rgba(250, 204, 21, 0.4); color: #fff; } html.dark .hl-green { background-color: rgba(74, 222, 128, 0.4); color: #fff; } html.dark .hl-blue { background-color: rgba(56, 189, 248, 0.4); color: #fff; } html.dark .hl-pink { background-color: rgba(244, 114, 182, 0.4); color: #fff; } html.dark .hl-orange { background-color: rgba(251, 146, 60, 0.4); color: #fff; } html.dark .hl-purple { background-color: rgba(192, 132, 252, 0.4); color: #fff; }
 
@@ -350,10 +350,10 @@
         /* MODALS & SPLASH SCREEN FIXES (BOTTOM SHEET FOR MOBILE) */
         .ma-modal-overlay, .modal, .time-up-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(4px); z-index: 99999; display: none; align-items: flex-end; justify-content: center; opacity: 0; transition: opacity 0.3s ease; }
         .ma-modal-overlay.show, .modal.show, .time-up-modal.show { display: flex; opacity: 1; }
-        
+
         .ma-modal-card, .modal-content, .time-up-content { background: var(--card); width: 100%; max-height: 90vh; border-radius: 24px 24px 0 0; box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; transform: translateY(100%); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1); padding-bottom: env(safe-area-inset-bottom); position: relative;}
         .ma-modal-overlay.show .ma-modal-card, .modal.show .modal-content, .time-up-modal.show .time-up-content { transform: translateY(0); }
-        
+
         /* Desktop Modal Override */
         @media (min-width: 768px) {
             .ma-modal-overlay, .modal, .time-up-modal { align-items: center; padding: 24px; }
@@ -368,9 +368,9 @@
         .ma-modal-close, .modal-close { background: var(--bg); border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 22px; line-height: 1; color: var(--text-strong); cursor: pointer; transition: background-color 0.2s, color 0.2s; display: flex; align-items: center; justify-content: center; }
         .ma-modal-close:active, .modal-close:active { transform: scale(0.9); }
         @media (min-width: 768px) { .ma-modal-close, .modal-close { position: absolute; top: 16px; right: 16px; z-index: 2; border: 1px solid var(--border); width: 36px; height: 36px;} .ma-modal-close:hover, .modal-close:hover { background: var(--danger); color: #fff; border-color: var(--danger); } }
-        
+
         .ma-modal-body { padding: 20px; overflow-y: auto; color: var(--text-strong); background: transparent; border-radius: 0 0 24px 24px; -webkit-overflow-scrolling: touch;}
-        
+
         .modal-content { max-width: 100%; align-items: center; background: transparent; box-shadow: none; border: none; padding: 0;}
         .modal-content img { max-width: 100%; max-height: 80vh; border-radius: 12px; background: var(--card); padding: 6px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); }
         .modal-close { position: absolute; top: 16px; right: 16px; background: rgba(0,0,0,0.5); color: #fff; z-index: 10; }
@@ -426,7 +426,7 @@
         .ma-splash-loading { width: 100%; height: 5px; border-radius: 999px; overflow: hidden; background: rgba(255, 255, 255, 0.1); position: relative; }
         .ma-splash-loading::after { content: ""; position: absolute; left: -40%; top: 0; width: 40%; height: 100%; background: var(--primary); animation: ma-splash-slide 1.2s infinite ease-in-out; border-radius: 999px; }
         @keyframes ma-splash-slide { 0% { left: -40%; } 50% { left: 60%; } 100% { left: 100%; } }
-        
+
         .ma-footer { text-align: center; font-size: 13px; color: var(--muted); padding: 20px 16px; font-weight: 600; margin-top: auto; padding-bottom: 90px;}
         @media (min-width: 768px) { .ma-footer { padding-bottom: 24px;} }
 
@@ -468,11 +468,11 @@
             .hero-brand h4 { font-size: 1.2em; }
 
             .content { padding: 0 16px 120px; }
-            
+
             .dashboard-section-title { font-size: 1.1em; margin: 24px 0 12px; }
             .main-menu { grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
             .menu-card { padding: 24px; border-radius: 20px; }
-            
+
             .exam-setup { padding: 20px 16px; }
             .exam-controls { grid-template-columns: 1fr; gap: 16px; }
             #start-exam-btn { max-width: 100%; }
@@ -483,17 +483,17 @@
             .timer { font-size: 13px; padding: 4px 8px; }
             .q-tools-bar { flex: 1; justify-content: flex-end;}
             .q-tool-btn { padding: 6px 10px; font-size: 12px;}
-            
+
             .answer-option { padding: 12px; gap: 12px; }
             .answer-option .option-letter { width: 26px; min-width: 26px; height: 26px; font-size: 12px; margin-top: 1px; }
 
             .commentary { padding: 20px 16px; margin-top: 16px;}
-            
+
             .results-header { padding: 30px 16px; }
             .results-header h2 { font-size: 1.8em; }
             .results-header .score { font-size: 3em; }
         }
-        
+
         @media (max-width: 400px) {
             .actions { flex-direction: column; }
             .typo-controls { width: 100%; justify-content: center; }
@@ -524,14 +524,13 @@
             --nbme-mark: #d99100;
         }
 
-        /* When active, hide the old top tools bar and progress section so the NBME chrome takes over */
         .nbme-skin .progress-section,
         .nbme-skin .question-header { display: none !important; }
 
         .nbme-skin {
             background: var(--nbme-page-bg);
             padding: 0 !important;
-            margin: 0 !important;  /* break out of .content padding */
+            margin: 0 !important;
             min-height: calc(100vh - 70px);
             font-family: Verdana, Arial, Helvetica, sans-serif !important;
             color: var(--nbme-text);
@@ -540,20 +539,12 @@
             .nbme-skin { margin: 0 !important; }
         }
 
-        /* ---- Top header strip (item counter, mark, block label) ---- */
         .nbme-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: flex; align-items: center; justify-content: space-between;
             background: linear-gradient(180deg, var(--nbme-header-top) 0%, var(--nbme-header-bot) 100%);
-            color: #fff;
-            padding: 0 14px;
-            height: 46px;
+            color: #fff; padding: 0 14px; height: 46px;
             border-bottom: 1px solid #0c2c47;
-            font-size: 13px;
-            position: sticky;
-            top: 70px;
-            z-index: 50;
+            font-size: 13px; position: sticky; top: 70px; z-index: 50;
             box-shadow: 0 2px 4px rgba(0,0,0,0.15);
         }
         .nbme-header-section { display: flex; align-items: center; gap: 14px; }
@@ -575,9 +566,7 @@
         }
         .nbme-mark-btn:hover { background: rgba(255,255,255,0.18); }
         .nbme-mark-btn.is-marked { background: var(--nbme-mark); border-color: #b87900; }
-        .nbme-mark-btn::before {
-            content: '⚑'; font-size: 14px; line-height: 1;
-        }
+        .nbme-mark-btn::before { content: '\2691'; font-size: 14px; line-height: 1; }
         .nbme-clock {
             font-family: 'Courier New', Menlo, monospace;
             background: rgba(0,0,0,0.18); padding: 5px 10px; border-radius: 3px;
@@ -588,7 +577,6 @@
             font-size: 12px; font-weight: 600;
         }
 
-        /* ---- Paper / question canvas ---- */
         .nbme-paper-wrap {
             padding: 14px 12px 90px 12px;
             background: var(--nbme-page-bg);
@@ -612,7 +600,6 @@
             .nbme-skin .question-card { padding: 14px 10px !important; }
         }
 
-        /* ---- Question stem ---- */
         .nbme-skin .question-stem {
             font-family: Verdana, Arial, Helvetica, sans-serif !important;
             font-size: calc(15px * var(--text-scale)) !important;
@@ -628,7 +615,6 @@
             margin: 12px 0; display: block; cursor: zoom-in;
         }
 
-        /* ---- Answer options (Prometric radio look) ---- */
         .nbme-skin .answer-options { gap: 6px !important; margin-bottom: 16px !important; }
         .nbme-skin .answer-option {
             background: transparent !important;
@@ -664,7 +650,6 @@
             text-decoration: line-through !important;
             color: var(--nbme-muted) !important;
         }
-        /* Replace round letter pill with a Prometric-style radio + letter */
         .nbme-skin .answer-option .option-letter {
             background: transparent !important;
             color: var(--nbme-text) !important;
@@ -697,11 +682,7 @@
         }
         .nbme-skin .answer-option.correct .option-letter::before { box-shadow: inset 0 0 0 3px var(--nbme-correct); border-color: var(--nbme-correct); }
         .nbme-skin .answer-option.incorrect .option-letter::before { box-shadow: inset 0 0 0 3px var(--nbme-incorrect); border-color: var(--nbme-incorrect); }
-        .nbme-skin .answer-option .option-letter::after {
-            content: '.';
-            margin-left: -2px;
-            font-weight: 700;
-        }
+        .nbme-skin .answer-option .option-letter::after { content: '.'; margin-left: -2px; font-weight: 700; }
         .nbme-skin .answer-option .option-text {
             font-family: Verdana, Arial, Helvetica, sans-serif !important;
             font-size: calc(14px * var(--text-scale)) !important;
@@ -710,7 +691,6 @@
             color: var(--nbme-text) !important;
         }
 
-        /* ---- Explanation panel (looks like a teaching note attached after) ---- */
         .nbme-skin .commentary {
             background: #f9fbfc !important;
             border: 1px solid var(--nbme-divider) !important;
@@ -731,38 +711,23 @@
             margin-bottom: 10px !important;
         }
 
-        /* ---- Bottom Prometric toolbar (Previous/Next, Lab Values, Calculator, etc.) ---- */
         .nbme-toolbar {
-            position: fixed;
-            left: 0; right: 0; bottom: 0;
+            position: fixed; left: 0; right: 0; bottom: 0;
             background: linear-gradient(180deg, var(--nbme-toolbar-top) 0%, var(--nbme-toolbar-bot) 100%);
-            display: flex;
-            align-items: stretch;
-            justify-content: space-between;
-            padding: 0 8px;
-            height: 56px;
+            display: flex; align-items: stretch; justify-content: space-between;
+            padding: 0 8px; height: 56px;
             border-top: 1px solid #1a1d22;
             box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
-            z-index: 100;
-            gap: 4px;
+            z-index: 100; gap: 4px;
         }
         .nbme-toolbar .nbme-tool-group { display: flex; align-items: stretch; gap: 4px; }
         .nbme-tool {
-            background: transparent;
-            color: #e6e9ec;
-            border: none;
+            background: transparent; color: #e6e9ec; border: none;
             padding: 0 14px;
             font-family: Verdana, Arial, Helvetica, sans-serif;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 3px;
-            min-width: 64px;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.3px;
+            cursor: pointer; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; gap: 3px; min-width: 64px;
             border-right: 1px solid rgba(255,255,255,0.06);
             border-left: 1px solid rgba(0,0,0,0.18);
             transition: background 0.15s, color 0.15s;
@@ -787,14 +752,10 @@
             .nbme-tool .nbme-tool-lbl-long { display: none; }
         }
 
-        /* Reverse-color (white-on-black) high-contrast toggle (NBME has this) */
-        .nbme-skin.nbme-reverse {
-            background: #1a1a1a !important;
-        }
+        .nbme-skin.nbme-reverse { background: #1a1a1a !important; }
         .nbme-skin.nbme-reverse .nbme-paper-wrap { background: #1a1a1a; }
         .nbme-skin.nbme-reverse .question-card {
-            background: #1a1a1a !important;
-            color: #f1f1f1 !important;
+            background: #1a1a1a !important; color: #f1f1f1 !important;
             border-color: #3a3a3a !important;
         }
         .nbme-skin.nbme-reverse .question-stem,
@@ -809,10 +770,8 @@
             background: #232323 !important; color: #e8e8e8 !important; border-color: #3a3a3a !important;
         }
 
-        /* Hide the old mobile bottom nav while NBME skin is active */
         body:has(.nbme-skin) #mobile-bottom-nav { display: none !important; }
 
-        /* Hide topbar and main hero on Learning Mode question screen for fullscreen exam feel */
         body.in-nbme-question .topbar,
         body.in-nbme-question .unified-hero { display: none !important; }
         body.in-nbme-question .container { padding-bottom: 0; max-width: none !important; width: 100% !important; }
@@ -1148,7 +1107,7 @@
         }
 
 
-        /* ===== Select Topics + Exam (multi-select UI) ===== */
+        /* ===== Select Topics (Learning Mode multi-select) ===== */
         .lm-setup { padding: 26px; }
         .lm-back { display:inline-flex; align-items:center; gap:6px; background:var(--nbme-header-bot); color:#fff;
             border:none; border-radius:12px; padding:10px 18px; font-weight:700; font-size:0.95em; cursor:pointer;
@@ -1189,7 +1148,7 @@
         .lm-start:hover:not(:disabled){ background:var(--nbme-header-top); transform:translateY(-1px); }
         .lm-start:disabled { opacity:.45; cursor:not-allowed; box-shadow:none; }
         .lm-section-label { font-weight:800; color:var(--nbme-header-bot); font-size:0.78em; letter-spacing:.08em; text-transform:uppercase; margin:0 0 12px; }
-        /* Hide topbar branding & Visit Us (kept in DOM for integrity check) */
+        /* ===== Hide topbar branding & Visit Us (elements kept in DOM for integrity check) ===== */
         .topbar .brand { display: none !important; }
         .topbar .actions .btn-visit { display: none !important; }
         .topbar .topbar-left { flex: 0 0 auto; }
@@ -1206,7 +1165,7 @@
         .nbme-skin.uw-skin.nbme-reverse .commentary h4 { color: #5bb8ff !important; }
         .nbme-skin.uw-skin.nbme-reverse .answer-option.eliminated .option-text,
         .nbme-skin.uw-skin.nbme-reverse .answer-option.eliminated .option-text * { color: #8a93a0 !important; }
-        /* ===== Explanation blends into background, no box ===== */
+        /* ===== Explanation blends into background, no box (Form 27) ===== */
         .commentary,
         .nbme-skin .commentary,
         .nbme-skin.uw-skin .commentary,
@@ -1493,69 +1452,6 @@
 
     <script>
         // =========================================================================
-        // EMBEDDED-ASSET SHIM — lets index.html work when opened directly via file://
-        // ---------------------------------------------------------------------------
-        // Chrome blocks fetch() on file:// URLs, which would otherwise prevent the
-        // app from loading sql-wasm.wasm, categories.json, and the *.db files.
-        // embedded-assets.js bundles all three as base64 strings on
-        // window.__MA_EMBEDDED. Below we (1) intercept fetch() to serve those
-        // bundled blobs and (2) pass the WASM directly to initSqlJs via wasmBinary.
-        // =========================================================================
-        (function () {
-            const E = window.__MA_EMBEDDED;
-            if (!E) return; // fall through to network fetch (server mode)
-
-            function b64ToBytes(b64) {
-                const bin = atob(b64);
-                const out = new Uint8Array(bin.length);
-                for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
-                return out;
-            }
-            // Cache decoded WASM and DBs so repeated requests are cheap
-            const wasmBytes = b64ToBytes(E.wasmBase64);
-            const dbCache = {};
-            for (const name of Object.keys(E.databases || {})) {
-                Object.defineProperty(dbCache, name, {
-                    get() {
-                        const v = b64ToBytes(E.databases[name]);
-                        Object.defineProperty(dbCache, name, { value: v });
-                        return v;
-                    },
-                    configurable: true
-                });
-            }
-            window.__MA_WASM_BYTES = wasmBytes;
-
-            const origFetch = window.fetch ? window.fetch.bind(window) : null;
-            window.fetch = function (input, init) {
-                const url = typeof input === 'string' ? input : (input && input.url) || '';
-                // categories.json
-                if (/(^|\/)Data\/categories\.json(\?|$)/.test(url)) {
-                    return Promise.resolve(new Response(JSON.stringify(E.categoriesJson), {
-                        status: 200, headers: { 'Content-Type': 'application/json' }
-                    }));
-                }
-                // Data/{name}/data.db
-                const m = url.match(/(?:^|\/)Data\/([^?]+?)\/data\.db(\?|$)/);
-                if (m) {
-                    const name = decodeURIComponent(m[1]);
-                    if (dbCache[name]) {
-                        return Promise.resolve(new Response(dbCache[name], {
-                            status: 200, headers: { 'Content-Type': 'application/octet-stream' }
-                        }));
-                    }
-                }
-                // js/sql-wasm.wasm fallback (initSqlJs uses wasmBinary so this rarely triggers)
-                if (/(^|\/)js\/sql-wasm\.wasm(\?|$)/.test(url)) {
-                    return Promise.resolve(new Response(wasmBytes, {
-                        status: 200, headers: { 'Content-Type': 'application/wasm' }
-                    }));
-                }
-                if (origFetch) return origFetch(input, init);
-                return Promise.reject(new Error('fetch unavailable: ' + url));
-            };
-        })();
-        // =========================================================================
         // CORE ENGINE - Fully Integrated Logic + Smart Hint Splitter + Touch Support
         // =========================================================================
 
@@ -1563,62 +1459,62 @@
         let currentMode = null, selectedCategories = new Set(), currentQuestions = [], currentQuestionIndex = 0;
         let userAnswers = {}, examTimer = null, totalTimeRemaining = 0, examSettings = {}, examTimeExpired = false;
         let learningAnswered = false, categoriesStructure = [];
-        
-        let currentQuestionStorageKey = null; 
-        let currentNoteId = null; 
+
+        let currentQuestionStorageKey = null;
+        let currentNoteId = null;
         let isNavigating = false;
         let currentQData = null;
-        let nbmeHints = {}; 
+        let nbmeHints = {};
         let maLoadHighlights = null; // Exposed for highlighter IIFE
 
         // --- Initialization ---
+        function isDirectFileLaunch() {
+            return window.location.protocol === 'file:';
+        }
+
+        function showStartupError(error) {
+            const splash = document.getElementById("ma-splash-overlay");
+            if (!splash) return;
+            const message = error && error.message ? error.message : String(error || "Unknown startup error");
+            splash.innerHTML = `
+                <div class="ma-splash-box">
+                    <div class="title">Open with the launcher</div>
+                    <div class="subtitle" style="line-height:1.5">
+                        Chrome blocked part of the local NBME engine.<br>
+                        Double-click <strong>Start NBME BS 27.command</strong> in this folder instead.
+                    </div>
+                    <div style="margin-top:16px; font-size:11px; color:#64748b; word-break:break-word;">${message}</div>
+                </div>
+            `;
+        }
+
         async function initSQL() {
             if (!SQL) {
                 try {
-                    const opts = { locateFile: f => `assets/js/${f}` };
-                    // If embedded-assets.js was loaded, use the bundled WASM directly
-                    // so initSqlJs doesn't try to fetch it (which fails on file://).
-                    if (window.__MA_WASM_BYTES) opts.wasmBinary = window.__MA_WASM_BYTES;
-                    SQL = await Promise.race([
-                        initSqlJs(opts),
-                        new Promise((_, reject) =>
-                            setTimeout(() => reject(new Error("initSqlJs timed out")), 8000)
-                        )
-                    ]);
+                    const sqlConfig = { locateFile: f => `assets/js/${f}` };
+                    if (isDirectFileLaunch() && window.NBME_LOCAL_ASSETS) {
+                        sqlConfig.wasmBinary = window.NBME_LOCAL_ASSETS.getWasmBinary();
+                    }
+                    SQL = await initSqlJs(sqlConfig);
                 } catch (e) {
                     console.error("Failed to init SQL.js", e);
+                    showStartupError(e);
+                    throw e;
                 }
             }
-        }
-
-        function showSqlInitError(splash) {
-            if (!splash) return;
-            splash.innerHTML = ''
-                + '<div class="ma-splash-box" style="max-width:520px;text-align:left;">'
-                + '  <div style="font-size:48px;text-align:center;margin-bottom:12px;">⚠️</div>'
-                + '  <div class="title" style="text-align:center;">Could not start the engine</div>'
-                + '  <div class="subtitle" style="text-align:center;margin-bottom:20px;">'
-                + '    The SQL engine failed to initialize. Make sure <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">embedded-assets.js</code> '
-                + '    and the <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">js/</code> folder are next to <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">index.html</code>.'
-                + '  </div>'
-                + '  <div style="background:rgba(33,174,217,0.12);border-left:3px solid #21AED9;border-radius:8px;padding:14px 16px;color:#cbd5e1;font-size:13px;line-height:1.6;">'
-                + '    <b style="color:#fff;">Fallback:</b> double-click <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">Mac_Users_Click.command</code> '
-                + '    (Mac) or <code style="background:rgba(255,255,255,0.12);padding:2px 6px;border-radius:4px;">Windows_Users_Click.bat</code> (Windows) to start the local server.'
-                + '  </div>'
-                + '</div>';
+            return SQL;
         }
 
         document.addEventListener("DOMContentLoaded", async () => {
             const splash = document.getElementById("ma-splash-overlay");
             const startTime = Date.now();
-            await initSQL();
-            const elapsed = Date.now() - startTime;
-            const remainingTime = Math.max(0, 2000 - elapsed);
-
-            if (splash && !SQL) {
-                showSqlInitError(splash);
+            try {
+                await initSQL();
+            } catch (e) {
                 return;
             }
+            const elapsed = Date.now() - startTime;
+            const remainingTime = Math.max(0, 2000 - elapsed);
 
             if (splash) {
                 setTimeout(() => {
@@ -1628,8 +1524,8 @@
             }
 
             const isDark = localStorage.getItem('ma_theme') === 'dark';
-            if (isDark) { 
-                document.documentElement.classList.add('dark'); 
+            if (isDark) {
+                document.documentElement.classList.add('dark');
                 document.getElementById('dark-toggle').textContent = '☀️';
                 document.querySelector('meta[name="theme-color"]').setAttribute("content", "#0f172a");
             }
@@ -1667,16 +1563,16 @@
         // --- UI Interactions ---
         document.getElementById('dark-toggle').addEventListener('click', () => {
             const isNowDark = !document.documentElement.classList.contains('dark');
-            if (isNowDark) { 
-                document.documentElement.classList.add('dark'); 
-                localStorage.setItem('ma_theme', 'dark'); 
-                document.getElementById('dark-toggle').textContent = '☀️'; 
+            if (isNowDark) {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('ma_theme', 'dark');
+                document.getElementById('dark-toggle').textContent = '☀️';
                 document.querySelector('meta[name="theme-color"]').setAttribute("content", "#0f172a");
-            } 
-            else { 
-                document.documentElement.classList.remove('dark'); 
-                localStorage.setItem('ma_theme', 'light'); 
-                document.getElementById('dark-toggle').textContent = '🌙'; 
+            }
+            else {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('ma_theme', 'light');
+                document.getElementById('dark-toggle').textContent = '🌙';
                 document.querySelector('meta[name="theme-color"]').setAttribute("content", "#21AED9");
             }
         });
@@ -1694,14 +1590,12 @@
             if (sec) sec.classList.add('active');
             window.scrollTo(0, 0);
             if (secId === 'main-menu') loadDashboardActivity();
-            // Strip the NBME fullscreen mode whenever we leave the question screen
             if (secId !== 'learning-mode') {
                 document.body.classList.remove('in-nbme-question');
                 const lq = document.getElementById('learning-questions');
                 if (lq) { lq.classList.remove('nbme-skin'); lq.classList.remove('uw-skin'); }
                 if (typeof uwStopTimer === 'function') uwStopTimer();
             }
-            // Show the topbar Back button on every screen EXCEPT the dashboard
             const backBtn = document.getElementById('topbar-back-btn');
             if (backBtn) backBtn.style.display = (secId === 'main-menu') ? 'none' : 'inline-flex';
         }
@@ -1724,12 +1618,10 @@
             updateSelectedInfo();
             showSection('main-menu');
 
-            // Cleanup bottom nav if it exists
             const bottomNav = document.getElementById('mobile-bottom-nav');
             if(bottomNav) bottomNav.style.display = 'none';
         }
 
-        // --- NBME toolbar helpers ---
         // --- UWorld-style helpers ---
         let uwElapsedSeconds = 0;
         let uwElapsedTimer = null;
@@ -1813,7 +1705,6 @@
             if (target) target.classList.toggle('nbme-reverse');
         }
         function nbmeOpenCalculator() {
-            // A small popup calculator window (Prometric provides one in-app)
             const w = window.open('', 'nbme_calc', 'width=320,height=440,resizable=yes');
             if (!w) { alert('Calculator popup blocked. Please allow popups for this page.'); return; }
             w.document.write(`<!doctype html><html><head><title>Calculator</title><style>
@@ -1936,6 +1827,9 @@
 /* Also hide the splash overlay's Medicine Academy title (the splash itself
    stays so the load animation still plays) — only the brand text disappears */
 .ma-splash-box .title { display: none !important; }
+
+
+    
  in the question header
    (no text labels, no counter). Overrides the older .uw-nav-btn style. */
 .uw-nav-btn {
@@ -1989,63 +1883,74 @@
         }
 
         // --- Core Database & Tree Logic ---
-        async function loadCategoriesStructure() { 
-            try { 
-                const response = await fetch('assets/Data/categories.json'); 
-                if (response.ok) { 
-                    const data = await response.json(); 
-                    categoriesStructure = data.categories || []; 
-                } 
-            } catch (error) { 
+        async function loadCategoriesStructure() {
+            if (isDirectFileLaunch() && window.NBME_LOCAL_ASSETS && window.NBME_LOCAL_ASSETS.categories) {
+                categoriesStructure = window.NBME_LOCAL_ASSETS.categories.categories || [];
+                return;
+            }
+            try {
+                const response = await fetch('assets/Data/categories.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    categoriesStructure = data.categories || [];
+                }
+            } catch (error) {
                 console.error("categories.json load error", error);
-                categoriesStructure = []; 
-            } 
+                categoriesStructure = [];
+            }
         }
 
         function buildCategoryPath(pathArray) { return pathArray.join('/'); }
 
         async function loadDatabaseForPath(path) {
-            const cacheKey = path; 
-            if (databases[cacheKey]) { 
-                currentDatabase = databases[cacheKey]; 
-                currentDatabasePath = path; 
-                return true; 
+            const cacheKey = path;
+            if (databases[cacheKey]) {
+                currentDatabase = databases[cacheKey];
+                currentDatabasePath = path;
+                return true;
             }
-            try { 
-                await initSQL(); 
-                const dbPath = `assets/Data/${path}/data.db`; 
-                const response = await fetch(dbPath); 
-                if (!response.ok) throw new Error(); 
-                const buffer = await response.arrayBuffer(); 
-                const db = new SQL.Database(new Uint8Array(buffer)); 
-                databases[cacheKey] = db; 
-                currentDatabase = db; 
-                currentDatabasePath = path; 
-                return true; 
-            } catch (error) { 
-                return false; 
+            try {
+                await initSQL();
+                let databaseBytes = null;
+                if (isDirectFileLaunch() && window.NBME_LOCAL_ASSETS) {
+                    databaseBytes = window.NBME_LOCAL_ASSETS.getDatabaseBinary(path);
+                }
+                if (!databaseBytes) {
+                    const dbPath = `assets/Data/${path}/data.db`;
+                    const response = await fetch(dbPath);
+                    if (!response.ok) throw new Error();
+                    const buffer = await response.arrayBuffer();
+                    databaseBytes = new Uint8Array(buffer);
+                }
+                const db = new SQL.Database(databaseBytes);
+                databases[cacheKey] = db;
+                currentDatabase = db;
+                currentDatabasePath = path;
+                return true;
+            } catch (error) {
+                return false;
             }
         }
 
-        async function buildCategoryTreeStructure(structure, currentPath = []) { 
-            let paths = []; 
-            for (const item of structure) { 
-                if (typeof item === 'object' && !Array.isArray(item)) { 
-                    for (const [key, value] of Object.entries(item)) { 
-                        const newPath = [...currentPath, key]; 
-                        paths.push({ 
-                            path: buildCategoryPath(newPath), 
-                            name: key, 
-                            fullPath: newPath, 
-                            hasChildren: true, 
-                            type: 'category', 
-                            childrenLoaded: false, 
-                            children: [] 
-                        }); 
-                    } 
-                } 
-            } 
-            return paths; 
+        async function buildCategoryTreeStructure(structure, currentPath = []) {
+            let paths = [];
+            for (const item of structure) {
+                if (typeof item === 'object' && !Array.isArray(item)) {
+                    for (const [key, value] of Object.entries(item)) {
+                        const newPath = [...currentPath, key];
+                        paths.push({
+                            path: buildCategoryPath(newPath),
+                            name: key,
+                            fullPath: newPath,
+                            hasChildren: true,
+                            type: 'category',
+                            childrenLoaded: false,
+                            children: []
+                        });
+                    }
+                }
+            }
+            return paths;
         }
 
         async function loadCategoryChildren(categoryItem) {
@@ -2069,7 +1974,7 @@
                 systemsResult[0].values.forEach(row => {
                     const [sysId, sysName, sysCount] = row;
                     const systemQuestionCount = parseInt(sysCount) || 0;
-                    
+
                     const subjectsQuery = `SELECT DISTINCT s.id, s.name, COUNT(q.id) as count FROM Subjects s INNER JOIN Questions q ON q.subId = s.id WHERE q.sysId = ${sysId} GROUP BY s.id, s.name ORDER BY s.name`;
                     const subjectsResult = currentDatabase.exec(subjectsQuery);
                     let subjectsChildren = [];
@@ -2079,33 +1984,33 @@
                             const [subId, subName, subCount] = subRow;
                             const questionCount = parseInt(subCount) || 0;
                             if (questionCount > 0) {
-                                subjectsChildren.push({ 
-                                    path: categoryItem.path, 
-                                    name: subName, 
-                                    fullPath: categoryItem.fullPath, 
-                                    hasChildren: false, 
-                                    type: 'subject', 
-                                    id: subId, 
-                                    systemId: sysId, 
-                                    count: questionCount, 
-                                    childrenLoaded: true, 
-                                    children: [] 
+                                subjectsChildren.push({
+                                    path: categoryItem.path,
+                                    name: subName,
+                                    fullPath: categoryItem.fullPath,
+                                    hasChildren: false,
+                                    type: 'subject',
+                                    id: subId,
+                                    systemId: sysId,
+                                    count: questionCount,
+                                    childrenLoaded: true,
+                                    children: []
                                 });
                             }
                         });
                     }
 
                     if (subjectsChildren.length > 0 || systemQuestionCount > 0) {
-                        children.push({ 
-                            path: categoryItem.path, 
-                            name: sysName, 
-                            fullPath: categoryItem.fullPath, 
-                            hasChildren: subjectsChildren.length > 0, 
-                            type: 'system', 
-                            id: sysId, 
-                            count: systemQuestionCount, 
-                            childrenLoaded: true, 
-                            children: subjectsChildren 
+                        children.push({
+                            path: categoryItem.path,
+                            name: sysName,
+                            fullPath: categoryItem.fullPath,
+                            hasChildren: subjectsChildren.length > 0,
+                            type: 'system',
+                            id: sysId,
+                            count: systemQuestionCount,
+                            childrenLoaded: true,
+                            children: subjectsChildren
                         });
                     }
                 });
@@ -2117,13 +2022,113 @@
         }
 
         // --- Learning Mode Trees & Logic ---
+
+        async function renderLearningTree(items, container, level = 0) {
+            for (const item of items) {
+                const nodeDiv = document.createElement('div');
+                nodeDiv.className = 'tree-node';
+                nodeDiv.style.marginLeft = `${level * 12}px`;
+
+                const labelDiv = document.createElement('div');
+                labelDiv.className = 'tree-label';
+
+                if (item.hasChildren) {
+                    const toggleSpan = document.createElement('span'); toggleSpan.className = 'tree-toggle'; toggleSpan.textContent = '▶';
+                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
+                    labelDiv.appendChild(toggleSpan);
+                    labelDiv.appendChild(textSpan);
+
+                    if (item.type === 'system' && item.count > 0) {
+                        const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count; labelDiv.appendChild(countSpan);
+                    }
+
+                    const childrenDiv = document.createElement('div'); childrenDiv.className = 'tree-children';
+
+                    labelDiv.addEventListener('click', async (e) => {
+                        if (e.target === toggleSpan || e.target === textSpan) {
+                            const isExpanded = childrenDiv.classList.contains('expanded');
+                            if (!isExpanded) {
+                                if (!item.childrenLoaded) {
+                                    const loadingDiv = document.createElement('div'); loadingDiv.className = 'loading-inline'; loadingDiv.innerHTML = '<div class="spinner-small"></div><span>Loading...</span>'; childrenDiv.appendChild(loadingDiv);
+                                }
+                                childrenDiv.classList.add('expanded'); toggleSpan.textContent = '▼';
+                                if (!item.childrenLoaded) {
+                                    const children = await loadCategoryChildren(item);
+                                    childrenDiv.innerHTML = '';
+                                    await renderLearningTree(children, childrenDiv, level + 1);
+                                }
+                            } else {
+                                childrenDiv.classList.remove('expanded'); toggleSpan.textContent = '▶';
+                            }
+                        } else if (item.type === 'system') {
+                            const loaded = await loadDatabaseForPath(item.path);
+                            if (loaded) loadLearningQuestions(item.id, 'system');
+                        }
+                    });
+
+                    nodeDiv.appendChild(labelDiv);
+                    if (item.childrenLoaded && item.children.length > 0) {
+                        await renderLearningTree(item.children, childrenDiv, level + 1);
+                    }
+                    nodeDiv.appendChild(childrenDiv);
+                } else {
+                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
+                    const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count;
+                    labelDiv.appendChild(textSpan); labelDiv.appendChild(countSpan); labelDiv.style.cursor = 'pointer';
+
+                    if (item.type === 'subject') {
+                        labelDiv.addEventListener('click', async () => {
+                            const loaded = await loadDatabaseForPath(item.path);
+                            if(loaded) loadLearningQuestions(item.id, 'subject', item.systemId);
+                            else alert("Database file not found!");
+                        });
+                    } else if (item.type === 'system') {
+                        labelDiv.addEventListener('click', async () => {
+                            const loaded = await loadDatabaseForPath(item.path);
+                            if(loaded) loadLearningQuestions(item.id, 'system');
+                        });
+                    }
+                    nodeDiv.appendChild(labelDiv);
+                }
+                container.appendChild(nodeDiv);
+            }
+        }
+
+        function loadLearningQuestions(categoryId, categoryType, systemId = null) {
+            let query;
+            if (categoryType === 'subject' && systemId != null && systemId !== '') {
+                query = `SELECT id FROM Questions WHERE subId = ${categoryId} AND sysId = ${systemId} ORDER BY id`;
+            } else if (categoryType === 'system') {
+                query = `SELECT id FROM Questions WHERE sysId = ${categoryId} ORDER BY id`;
+            }
+
+            if (query) {
+                try {
+                    const result = currentDatabase.exec(query);
+                    if (result.length > 0 && result[0].values.length > 0) {
+                        currentQuestions = result[0].values.map(row => ({ id: row[0], dbPath: currentDatabasePath }));
+                        currentQuestionIndex = 0;
+                        userAnswers = {};
+                        learningAnswered = false;
+                        currentMode = 'learning';
+                        document.getElementById('learning-setup').style.display = 'none';
+                        document.getElementById('learning-questions').style.display = 'block';
+                        displayQuestion();
+                    } else {
+                        alert("No questions found in this selection.");
+                    }
+                } catch(e) {
+                    alert("Database Query Error: " + e.message);
+                }
+            }
+        }
+
         // ===== Select Topics (Learning Mode multi-select, added) =====
         const FORM_DB_PATH = "Comprehensive Basic Science Self-Assessment - Form 27";
-        const DISCIPLINE_MAP = {"652481":"Pathology","652482":"Pathology","652483":"Gross Anatomy & Embryology","652485":"Genetics","652486":"Gross Anatomy & Embryology","652487":"Pathology","652488":"Biochemistry & Nutrition","652489":"Pathology","652490":"Microbiology","652491":"Pharmacology","652492":"Pathology","652493":"Behavioral Sciences","652494":"Histology & Cell Biology","652495":"Genetics","652496":"Physiology","652497":"Biochemistry & Nutrition","652498":"Physiology","652499":"Physiology","652500":"Immunology","652501":"Pathology","652502":"Physiology","652503":"Histology & Cell Biology","652504":"Physiology","652505":"Biochemistry & Nutrition","652506":"Pathology","652507":"Immunology","652508":"Immunology","652509":"Pharmacology","652510":"Pathology","652511":"Gross Anatomy & Embryology","652512":"Genetics","652513":"Behavioral Sciences","652514":"Pathology","652515":"Behavioral Sciences","652516":"Pathology","652517":"Gross Anatomy & Embryology","652518":"Genetics","652519":"Gross Anatomy & Embryology","652520":"Behavioral Sciences","652521":"Pathology","652522":"Immunology","652523":"Gross Anatomy & Embryology","652524":"Behavioral Sciences","652525":"Gross Anatomy & Embryology","652526":"Gross Anatomy & Embryology","652527":"Gross Anatomy & Embryology","652528":"Pharmacology","652529":"Pharmacology","652530":"Pharmacology","652531":"Pathology","652532":"Immunology","652533":"Physiology","652534":"Biochemistry & Nutrition","652535":"Behavioral Sciences","652536":"Pharmacology","652537":"Pathology","652538":"Pathology","652539":"Behavioral Sciences","652540":"Pharmacology","652541":"Pathology","652542":"Pharmacology","652543":"Pathology","652544":"Biochemistry & Nutrition","652545":"Pharmacology","652546":"Pathology","652547":"Physiology","652548":"Pharmacology","652549":"Biochemistry & Nutrition","652550":"Physiology","652551":"Immunology","652552":"Pathology","652553":"Biochemistry & Nutrition","652554":"Biochemistry & Nutrition","652555":"Gross Anatomy & Embryology","652556":"Pathology","652557":"Physiology","652558":"Biochemistry & Nutrition","652559":"Pharmacology","652560":"Pharmacology","652561":"Pathology","652562":"Behavioral Sciences","652563":"Biochemistry & Nutrition","652564":"Pharmacology","652565":"Pathology","652566":"Microbiology","652567":"Behavioral Sciences","652568":"Physiology","652569":"Behavioral Sciences","652570":"Immunology","652571":"Microbiology","652572":"Histology & Cell Biology","652573":"Pharmacology","652574":"Physiology","652575":"Physiology","652576":"Genetics","652577":"Physiology","652578":"Histology & Cell Biology","652579":"Microbiology","652580":"Pathology","652581":"Physiology","652582":"Behavioral Sciences","652583":"Pathology","652584":"Physiology","652585":"Gross Anatomy & Embryology","652586":"Immunology","652587":"Physiology","652588":"Microbiology","652589":"Pathology","652590":"Behavioral Sciences","652591":"Biochemistry & Nutrition","652592":"Pathology","652593":"Pathology","652594":"Pathology","652595":"Pathology","652596":"Pathology","652597":"Pathology","652598":"Pathology","652599":"Pathology","652600":"Microbiology","652601":"Pathology","652602":"Gross Anatomy & Embryology","652603":"Immunology","652604":"Physiology","652605":"Microbiology","652606":"Physiology","652608":"Pathology","652609":"Gross Anatomy & Embryology","652610":"Immunology","652611":"Behavioral Sciences","652612":"Biochemistry & Nutrition","652613":"Pharmacology","652614":"Pharmacology","652615":"Gross Anatomy & Embryology","652616":"Behavioral Sciences","652617":"Microbiology","652618":"Gross Anatomy & Embryology","652619":"Behavioral Sciences","652620":"Pathology","652621":"Biochemistry & Nutrition","652622":"Microbiology","652623":"Pathology","652624":"Pharmacology","652625":"Physiology","652626":"Pathology","652627":"Biochemistry & Nutrition","652628":"Gross Anatomy & Embryology","652629":"Behavioral Sciences","652630":"Physiology","652631":"Gross Anatomy & Embryology","652632":"Gross Anatomy & Embryology","652633":"Gross Anatomy & Embryology","652634":"Genetics","652635":"Physiology","652636":"Pharmacology","652637":"Histology & Cell Biology","652638":"Biochemistry & Nutrition","652639":"Physiology","652640":"Pathology","652641":"Physiology","652642":"Pharmacology","652643":"Biochemistry & Nutrition","652644":"Behavioral Sciences","652645":"Behavioral Sciences","652646":"Pathology","652647":"Behavioral Sciences","652648":"Pharmacology","652649":"Pathology","652650":"Immunology","652651":"Immunology","652652":"Pathology","652653":"Microbiology","652654":"Biochemistry & Nutrition","652655":"Behavioral Sciences","652656":"Pathology","652657":"Behavioral Sciences","652658":"Physiology","652659":"Pathology","652660":"Behavioral Sciences","652661":"Pharmacology","652662":"Behavioral Sciences","652663":"Behavioral Sciences","652664":"Pathology","652665":"Pathology","652666":"Gross Anatomy & Embryology","652667":"Gross Anatomy & Embryology","652668":"Pathology","652669":"Biochemistry & Nutrition","652670":"Physiology","652671":"Immunology","652672":"Immunology","652673":"Pathology","652674":"Pharmacology","652675":"Microbiology","652676":"Microbiology","652677":"Pharmacology","652678":"Gross Anatomy & Embryology","652679":"Pharmacology","652680":"Pathology"};
+        const DISCIPLINE_MAP = {"526705":"Immunology","526706":"Biochemistry & Nutrition","526707":"Pathology","526708":"Histology & Cell Biology","526709":"Physiology","526710":"Gross Anatomy & Embryology","526711":"Pathology","526712":"Physiology","526713":"Pharmacology","526714":"Physiology","526715":"Pharmacology","526716":"Pharmacology","526717":"Pathology","526718":"Physiology","526719":"Microbiology","526720":"Gross Anatomy & Embryology","526721":"Pathology","526722":"Physiology","526723":"Behavioral Sciences","526724":"Physiology","526725":"Pathology","526726":"Microbiology","526727":"Behavioral Sciences","526728":"Gross Anatomy & Embryology","526729":"Biochemistry & Nutrition","526730":"Behavioral Sciences","526731":"Pharmacology","526732":"Gross Anatomy & Embryology","526733":"Pharmacology","526734":"Pathology","526735":"Gross Anatomy & Embryology","526736":"Biochemistry & Nutrition","526737":"Biochemistry & Nutrition","526738":"Pathology","526739":"Pathology","526740":"Pharmacology","526741":"Behavioral Sciences","526742":"Behavioral Sciences","526743":"Microbiology","526744":"Gross Anatomy & Embryology","526745":"Behavioral Sciences","526746":"Microbiology","526747":"Microbiology","526748":"Immunology","526749":"Pathology","526750":"Physiology","526751":"Gross Anatomy & Embryology","526752":"Pathology","526753":"Pathology","526754":"Immunology","526755":"Genetics","526756":"Physiology","526757":"Pathology","526758":"Biochemistry & Nutrition","526759":"Behavioral Sciences","526760":"Microbiology","526761":"Pharmacology","526762":"Gross Anatomy & Embryology","526763":"Pathology","526764":"Gross Anatomy & Embryology","526765":"Physiology","526766":"Pharmacology","526767":"Physiology","526768":"Biochemistry & Nutrition","526769":"Biochemistry & Nutrition","526770":"Pathology","526771":"Behavioral Sciences","526772":"Pharmacology","526773":"Physiology","526774":"Pathology","526775":"Biochemistry & Nutrition","526776":"Biochemistry & Nutrition","526777":"Microbiology","526778":"Gross Anatomy & Embryology","526779":"Physiology","526780":"Behavioral Sciences","526781":"Pharmacology","526782":"Behavioral Sciences","526783":"Gross Anatomy & Embryology","526784":"Pathology","526785":"Microbiology","526786":"Microbiology","526787":"Pathology","526788":"Physiology","526789":"Behavioral Sciences","526790":"Pharmacology","526791":"Gross Anatomy & Embryology","526792":"Behavioral Sciences","526793":"Immunology","526794":"Pathology","526795":"Behavioral Sciences","526796":"Gross Anatomy & Embryology","526797":"Immunology","526798":"Pathology","526799":"Biochemistry & Nutrition","526800":"Pathology","526801":"Physiology","526802":"Pharmacology","526803":"Pathology","526804":"Gross Anatomy & Embryology","526805":"Histology & Cell Biology","526806":"Pathology","526807":"Microbiology","526808":"Behavioral Sciences","526809":"Pathology","526810":"Gross Anatomy & Embryology","526811":"Immunology","526812":"Behavioral Sciences","526813":"Biochemistry & Nutrition","526814":"Pathology","526815":"Pathology","526816":"Pathology","526817":"Pharmacology","526818":"Immunology","526819":"Behavioral Sciences","526820":"Pharmacology","526821":"Biochemistry & Nutrition","526822":"Pathology","526823":"Microbiology","526824":"Pharmacology","526825":"Pathology","526826":"Biochemistry & Nutrition","526827":"Physiology","526828":"Physiology","526829":"Biochemistry & Nutrition","526830":"Pharmacology","526831":"Biochemistry & Nutrition","526832":"Immunology","526833":"Gross Anatomy & Embryology","526834":"Physiology","526835":"Behavioral Sciences","526836":"Pharmacology","526837":"Pathology","526838":"Pathology","526839":"Pharmacology","526840":"Gross Anatomy & Embryology","526841":"Biochemistry & Nutrition","526842":"Biochemistry & Nutrition","526843":"Behavioral Sciences","526844":"Pharmacology","526845":"Physiology","526846":"Behavioral Sciences","526847":"Pathology","526848":"Microbiology","526849":"Histology & Cell Biology","526850":"Pathology","526851":"Gross Anatomy & Embryology","526852":"Pathology","526853":"Pharmacology","526854":"Pathology","526855":"Pathology","526856":"Behavioral Sciences","526857":"Physiology","526858":"Pathology","526859":"Pathology","526860":"Behavioral Sciences","526861":"Biochemistry & Nutrition","526862":"Behavioral Sciences","526863":"Physiology","526864":"Physiology","526865":"Physiology","526866":"Immunology","526867":"Histology & Cell Biology","526868":"Gross Anatomy & Embryology","526869":"Pathology","526870":"Pharmacology","526871":"Pharmacology","526872":"Pathology","526873":"Pharmacology","526874":"Gross Anatomy & Embryology","526875":"Pathology","526876":"Pharmacology","526877":"Physiology","526878":"Pharmacology","526879":"Pathology","526880":"Pathology","526881":"Biochemistry & Nutrition","526882":"Pathology","526883":"Pharmacology","526884":"Physiology","526885":"Behavioral Sciences","526886":"Gross Anatomy & Embryology","526887":"Pharmacology","526888":"Pathology","526889":"Gross Anatomy & Embryology","526890":"Pathology","526891":"Pharmacology","526892":"Pathology","526893":"Pathology","526894":"Biochemistry & Nutrition","526895":"Pathology","526896":"Pathology","526897":"Immunology","526898":"Genetics","526899":"Gross Anatomy & Embryology","526900":"Physiology","526901":"Behavioral Sciences","526902":"Microbiology","526903":"Pathology","526904":"Pathology"};
         const DISCIPLINE_DEFS = [{"name": "Pathology", "range": "45-55"}, {"name": "Physiology", "range": "30-40"}, {"name": "Pharmacology", "range": "10-20"}, {"name": "Biochemistry & Nutrition", "range": "5-15"}, {"name": "Microbiology", "range": "10-20"}, {"name": "Immunology", "range": "5-15"}, {"name": "Gross Anatomy & Embryology", "range": "10-20"}, {"name": "Histology & Cell Biology", "range": "5-15"}, {"name": "Behavioral Sciences", "range": "10-15"}, {"name": "Genetics", "range": "5-10"}];
-        const DISCIPLINE_NOTE = "Questions are grouped by the discipline each item primarily tests. Counts reflect this Form 27 set (198 items) and need not match the USMLE blueprint ranges, which are overlapping content axes.";
 
-        let lmView = 'block';
+        let lmView = 'discipline';
         let lmSel = { discipline: new Set(), block: new Set() };
         let lmBlocks = [];
 
@@ -2169,7 +2174,7 @@
             const note = document.getElementById('lm-note');
             grid.innerHTML = '';
             if (lmView === 'discipline') {
-                note.textContent = DISCIPLINE_NOTE;
+                note.textContent = 'This Form 27 viewer contains 199 questions extracted from the Medicine Academy Chrome session. Correct answers and full explanations were not exposed by the capture.';
                 note.style.display = 'block';
                 const counts = disciplineCounts();
                 DISCIPLINE_DEFS.forEach(d => {
@@ -2179,7 +2184,7 @@
             } else {
                 note.style.display = 'none';
                 lmBlocks.forEach(b => {
-                    grid.appendChild(lmRow('block', String(b.id), b.name, b.count + '-item block', b.count, b.count === 0));
+                    grid.appendChild(lmRow('block', String(b.id), b.name, '50-item exam block', b.count, b.count === 0));
                 });
             }
         }
@@ -2265,106 +2270,6 @@
             displayQuestion();
         }
 
-        async function renderLearningTree(items, container, level = 0) {
-            for (const item of items) {
-                const nodeDiv = document.createElement('div'); 
-                nodeDiv.className = 'tree-node'; 
-                nodeDiv.style.marginLeft = `${level * 12}px`;
-
-                const labelDiv = document.createElement('div'); 
-                labelDiv.className = 'tree-label';
-
-                if (item.hasChildren) {
-                    const toggleSpan = document.createElement('span'); toggleSpan.className = 'tree-toggle'; toggleSpan.textContent = '▶';
-                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
-                    labelDiv.appendChild(toggleSpan); 
-                    labelDiv.appendChild(textSpan);
-                    
-                    if (item.type === 'system' && item.count > 0) { 
-                        const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count; labelDiv.appendChild(countSpan); 
-                    }
-                    
-                    const childrenDiv = document.createElement('div'); childrenDiv.className = 'tree-children';
-                    
-                    labelDiv.addEventListener('click', async (e) => {
-                        if (e.target === toggleSpan || e.target === textSpan) {
-                            const isExpanded = childrenDiv.classList.contains('expanded');
-                            if (!isExpanded) {
-                                if (!item.childrenLoaded) { 
-                                    const loadingDiv = document.createElement('div'); loadingDiv.className = 'loading-inline'; loadingDiv.innerHTML = '<div class="spinner-small"></div><span>Loading...</span>'; childrenDiv.appendChild(loadingDiv); 
-                                }
-                                childrenDiv.classList.add('expanded'); toggleSpan.textContent = '▼';
-                                if (!item.childrenLoaded) { 
-                                    const children = await loadCategoryChildren(item); 
-                                    childrenDiv.innerHTML = ''; 
-                                    await renderLearningTree(children, childrenDiv, level + 1); 
-                                }
-                            } else { 
-                                childrenDiv.classList.remove('expanded'); toggleSpan.textContent = '▶'; 
-                            }
-                        } else if (item.type === 'system') { 
-                            const loaded = await loadDatabaseForPath(item.path); 
-                            if (loaded) loadLearningQuestions(item.id, 'system'); 
-                        }
-                    });
-
-                    nodeDiv.appendChild(labelDiv); 
-                    if (item.childrenLoaded && item.children.length > 0) { 
-                        await renderLearningTree(item.children, childrenDiv, level + 1); 
-                    } 
-                    nodeDiv.appendChild(childrenDiv);
-                } else {
-                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
-                    const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count;
-                    labelDiv.appendChild(textSpan); labelDiv.appendChild(countSpan); labelDiv.style.cursor = 'pointer';
-                    
-                    if (item.type === 'subject') {
-                        labelDiv.addEventListener('click', async () => { 
-                            const loaded = await loadDatabaseForPath(item.path); 
-                            if(loaded) loadLearningQuestions(item.id, 'subject', item.systemId); 
-                            else alert("Database file not found!");
-                        }); 
-                    } else if (item.type === 'system') {
-                        labelDiv.addEventListener('click', async () => { 
-                            const loaded = await loadDatabaseForPath(item.path); 
-                            if(loaded) loadLearningQuestions(item.id, 'system'); 
-                        });
-                    }
-                    nodeDiv.appendChild(labelDiv);
-                }
-                container.appendChild(nodeDiv);
-            }
-        }
-
-        function loadLearningQuestions(categoryId, categoryType, systemId = null) {
-            let query; 
-            if (categoryType === 'subject' && systemId != null && systemId !== '') { 
-                query = `SELECT id FROM Questions WHERE subId = ${categoryId} AND sysId = ${systemId} ORDER BY id`;
-            } else if (categoryType === 'system') { 
-                query = `SELECT id FROM Questions WHERE sysId = ${categoryId} ORDER BY id`; 
-            }
-            
-            if (query) { 
-                try {
-                    const result = currentDatabase.exec(query); 
-                    if (result.length > 0 && result[0].values.length > 0) { 
-                        currentQuestions = result[0].values.map(row => ({ id: row[0], dbPath: currentDatabasePath })); 
-                        currentQuestionIndex = 0; 
-                        userAnswers = {}; 
-                        learningAnswered = false; 
-                        currentMode = 'learning'; 
-                        document.getElementById('learning-setup').style.display = 'none'; 
-                        document.getElementById('learning-questions').style.display = 'block'; 
-                        displayQuestion(); 
-                    } else {
-                        alert("No questions found in this selection.");
-                    }
-                } catch(e) {
-                    alert("Database Query Error: " + e.message);
-                }
-            }
-        }
-
         // --- Exam Mode Trees & Logic ---
         // ===== Exam Mode: UWorld-style topic selection (added) =====
         let exView = 'block';
@@ -2391,7 +2296,7 @@
             const note = document.getElementById('ex-note');
             grid.innerHTML = '';
             if (exView === 'discipline') {
-                note.textContent = DISCIPLINE_NOTE;
+                note.textContent = 'This Form 27 viewer contains 199 questions extracted from the Medicine Academy Chrome session. Correct answers and full explanations were not exposed by the capture.';
                 note.style.display = 'block';
                 const counts = disciplineCounts();
                 DISCIPLINE_DEFS.forEach(d => {
@@ -2401,7 +2306,7 @@
             } else {
                 note.style.display = 'none';
                 lmBlocks.forEach(b => {
-                    grid.appendChild(exRow('block', String(b.id), b.name, b.count + '-item block', b.count, b.count === 0));
+                    grid.appendChild(exRow('block', String(b.id), b.name, '50-item exam block', b.count, b.count === 0));
                 });
             }
         }
@@ -2474,7 +2379,7 @@
             for (const item of items) {
                 const nodeDiv = document.createElement('div'); nodeDiv.className = 'tree-node'; nodeDiv.style.marginLeft = `${level * 12}px`;
                 const labelDiv = document.createElement('div'); labelDiv.className = 'tree-label';
-                
+
                 if (item.hasChildren) {
                     let checkbox = null;
                     if (item.type === 'system') {
@@ -2485,67 +2390,69 @@
                         labelDiv.appendChild(checkbox);
                     }
 
-                    const toggleSpan = document.createElement('span'); toggleSpan.className = 'tree-toggle'; toggleSpan.textContent = '▶'; 
-                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name; 
+                    const toggleSpan = document.createElement('span'); toggleSpan.className = 'tree-toggle'; toggleSpan.textContent = '▶';
+                    const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
                     labelDiv.appendChild(toggleSpan); labelDiv.appendChild(textSpan);
-                    
-                    if (typeof item.count === 'number' && item.count > 0) { 
-                        const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count; labelDiv.appendChild(countSpan); 
+
+                    if (typeof item.count === 'number' && item.count > 0) {
+                        const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count; labelDiv.appendChild(countSpan);
                     }
-                    
+
                     const childrenDiv = document.createElement('div'); childrenDiv.className = 'tree-children';
-                    
-                    labelDiv.onclick = async (e) => { 
+
+                    labelDiv.onclick = async (e) => {
                         if (e.target === checkbox) return;
-                        e.stopPropagation(); 
-                        if (!childrenDiv.classList.contains('expanded')) { 
-                            childrenDiv.classList.add('expanded'); toggleSpan.textContent = '▼'; 
-                            if (!item.childrenLoaded) { 
+                        e.stopPropagation();
+                        if (!childrenDiv.classList.contains('expanded')) {
+                            childrenDiv.classList.add('expanded'); toggleSpan.textContent = '▼';
+                            if (!item.childrenLoaded) {
                                 childrenDiv.innerHTML = '<div class="loading-inline"><div class="spinner-small"></div><span>Loading...</span></div>';
-                                const children = await loadCategoryChildren(item); 
-                                childrenDiv.innerHTML = ''; 
-                                await renderExamTree(children, childrenDiv, level + 1); 
-                                item.children = children; 
-                                item.childrenLoaded = true; 
-                            } else if (childrenDiv.childElementCount === 0 && item.children) { 
-                                await renderExamTree(item.children, childrenDiv, level + 1); 
-                            } 
-                        } else { 
-                            childrenDiv.classList.remove('expanded'); toggleSpan.textContent = '▶'; 
-                        } 
+                                const children = await loadCategoryChildren(item);
+                                childrenDiv.innerHTML = '';
+                                await renderExamTree(children, childrenDiv, level + 1);
+                                item.children = children;
+                                item.childrenLoaded = true;
+                            } else if (childrenDiv.childElementCount === 0 && item.children) {
+                                await renderExamTree(item.children, childrenDiv, level + 1);
+                            }
+                        } else {
+                            childrenDiv.classList.remove('expanded'); toggleSpan.textContent = '▶';
+                        }
                     };
-                    
-                    nodeDiv.appendChild(labelDiv); 
-                    if (item.childrenLoaded && item.children.length > 0) { 
-                        await renderExamTree(item.children, childrenDiv, level + 1); 
+
+                    nodeDiv.appendChild(labelDiv);
+                    if (item.childrenLoaded && item.children.length > 0) {
+                        await renderExamTree(item.children, childrenDiv, level + 1);
                     }
                     nodeDiv.appendChild(childrenDiv);
                 } else {
                     const checkbox = document.createElement('input'); checkbox.type = 'checkbox'; checkbox.className = 'tree-checkbox';
                     let categoryType = item.type; let categoryDbId = item.id; let systemId = null;
                     if (item.type === 'subject') { systemId = item.systemId; } else { systemId = item.id; categoryType = 'system'; }
-                    
+
                     const categoryId = `${item.path}|||${categoryType}|||${categoryDbId}|||${systemId ?? ''}`;
                     checkbox.dataset.categoryId = categoryId; checkbox.dataset.categoryType = categoryType; checkbox.dataset.categoryDbId = categoryDbId; checkbox.dataset.systemId = systemId ?? ''; checkbox.dataset.dbPath = item.path; checkbox.dataset.count = item.count || 0;
-                    
-                    checkbox.addEventListener('change', () => { 
-                        if (checkbox.checked) selectedCategories.add(categoryId); 
-                        else selectedCategories.delete(categoryId); 
-                        updateSelectedInfo(); 
+
+                    checkbox.addEventListener('change', () => {
+                        if (checkbox.checked) selectedCategories.add(categoryId);
+                        else selectedCategories.delete(categoryId);
+                        updateSelectedInfo();
                     });
-                    
+
                     const textSpan = document.createElement('span'); textSpan.className = 'tree-text'; textSpan.textContent = item.name;
                     const countSpan = document.createElement('span'); countSpan.className = 'tree-count'; countSpan.textContent = item.count;
-                    labelDiv.appendChild(checkbox); labelDiv.appendChild(textSpan); labelDiv.appendChild(countSpan); labelDiv.style.cursor = 'default'; 
+                    labelDiv.appendChild(checkbox); labelDiv.appendChild(textSpan); labelDiv.appendChild(countSpan); labelDiv.style.cursor = 'default';
                     nodeDiv.appendChild(labelDiv);
                 }
                 container.appendChild(nodeDiv);
             }
         }
 
+
         function updateSelectedInfo() {
             if (typeof exUpdateBar === 'function' && document.getElementById('ex-grid')) { try { exUpdateBar(); } catch(e){} }
         }
+
         document.getElementById('num-questions').addEventListener('input', function() { document.getElementById('total-time').value = parseInt(this.value) || 0; });
 
         document.getElementById('start-exam-btn').addEventListener('click', async () => {
@@ -2616,24 +2523,24 @@
                     <p>You have <strong>${flagCount}</strong> marked questions. Review them to master your weak points.</p><div class="card-action">Review Now &rarr;</div></div>`;
             }
 
-            if (hasActivity) { container.style.display = 'grid'; title.style.display = 'block'; } 
+            if (hasActivity) { container.style.display = 'grid'; title.style.display = 'block'; }
             else { container.style.display = 'none'; title.style.display = 'none'; }
         }
 
         async function startFlaggedReview() {
             currentQuestions = [];
-            for (let i = 0; i < localStorage.length; i++) { 
-                const key = localStorage.key(i); 
-                if (key.startsWith('MA_FLAG|||')) { 
-                    const parts = key.split('|||'); 
-                    if (parts.length === 3) currentQuestions.push({ id: parseInt(parts[2]), dbPath: parts[1] }); 
-                } 
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key.startsWith('MA_FLAG|||')) {
+                    const parts = key.split('|||');
+                    if (parts.length === 3) currentQuestions.push({ id: parseInt(parts[2]), dbPath: parts[1] });
+                }
             }
             if (currentQuestions.length === 0) return alert("No flagged questions found.");
             currentQuestionIndex = 0; userAnswers = {}; learningAnswered = false; currentMode = 'learning';
-            showSection('learning-mode'); 
-            document.getElementById('learning-categories-tree').style.display = 'none'; 
-            document.getElementById('learning-setup').style.display = 'none'; 
+            showSection('learning-mode');
+            document.getElementById('learning-categories-tree').style.display = 'none';
+            document.getElementById('learning-setup').style.display = 'none';
             document.getElementById('learning-questions').style.display = 'block';
             await displayQuestion();
         }
@@ -2643,40 +2550,40 @@
             currentMode = 'exam'; currentQuestions = saved.currentQuestions; currentQuestionIndex = saved.currentQuestionIndex; userAnswers = saved.userAnswers; examSettings = saved.examSettings; totalTimeRemaining = saved.totalTimeRemaining; selectedCategories = new Set(saved.selectedCategories); examTimeExpired = false;
             localStorage.removeItem('ma_suspended_exam'); loadDashboardActivity(); showSection('exam-mode');
             document.getElementById('exam-setup-title').style.display = 'none'; document.getElementById('exam-setup').style.display = 'none'; document.getElementById('exam-questions').style.display = 'block';
-            
+
             if (examTimer) clearInterval(examTimer);
             examTimer = setInterval(() => { totalTimeRemaining--; updateTimerDisplay(); if (totalTimeRemaining <= 0) { clearInterval(examTimer); examTimeExpired = true; document.getElementById('time-up-modal').classList.add('show'); } }, 1000);
-            
+
             await displayQuestion();
         }
 
-        function suspendExam() { 
-            if (confirm("Suspend this block? You can resume it from the Dashboard later.")) { 
-                localStorage.setItem('ma_suspended_exam', JSON.stringify({ currentQuestions, currentQuestionIndex, userAnswers, examSettings, totalTimeRemaining, selectedCategories: Array.from(selectedCategories) })); 
-                resetExamMode(); 
-            } 
+        function suspendExam() {
+            if (confirm("Suspend this block? You can resume it from the Dashboard later.")) {
+                localStorage.setItem('ma_suspended_exam', JSON.stringify({ currentQuestions, currentQuestionIndex, userAnswers, examSettings, totalTimeRemaining, selectedCategories: Array.from(selectedCategories) }));
+                resetExamMode();
+            }
         }
 
-        function startExamTimer() { 
-            if (examTimer) clearInterval(examTimer); 
-            totalTimeRemaining = examSettings.totalTime; 
-            examTimer = setInterval(() => { 
-                totalTimeRemaining--; 
-                updateTimerDisplay(); 
-                if (totalTimeRemaining <= 0) { 
-                    clearInterval(examTimer); examTimeExpired = true; 
-                    document.getElementById('time-up-modal').classList.add('show'); 
-                } 
-            }, 1000); 
+        function startExamTimer() {
+            if (examTimer) clearInterval(examTimer);
+            totalTimeRemaining = examSettings.totalTime;
+            examTimer = setInterval(() => {
+                totalTimeRemaining--;
+                updateTimerDisplay();
+                if (totalTimeRemaining <= 0) {
+                    clearInterval(examTimer); examTimeExpired = true;
+                    document.getElementById('time-up-modal').classList.add('show');
+                }
+            }, 1000);
         }
 
-        function updateTimerDisplay() { 
-            const t = document.getElementById('timer'); if (!t) return; 
-            const m = Math.floor(totalTimeRemaining / 60), s = totalTimeRemaining % 60; 
-            t.textContent = `⏱ ${m}:${s.toString().padStart(2, '0')}`; 
-            t.classList.remove('warning', 'critical'); 
-            if (totalTimeRemaining <= 60) t.classList.add('critical'); 
-            else if (totalTimeRemaining <= 300) t.classList.add('warning'); 
+        function updateTimerDisplay() {
+            const t = document.getElementById('timer'); if (!t) return;
+            const m = Math.floor(totalTimeRemaining / 60), s = totalTimeRemaining % 60;
+            t.textContent = `⏱ ${m}:${s.toString().padStart(2, '0')}`;
+            t.classList.remove('warning', 'critical');
+            if (totalTimeRemaining <= 60) t.classList.add('critical');
+            else if (totalTimeRemaining <= 300) t.classList.add('warning');
         }
 
         // --- SMART STRING SPLITTER FOR NBME HINTS ---
@@ -2701,19 +2608,19 @@
 
             const triggerRegex = /(?:<br\s*\/?>\s*)*(?:<p[^>]*>\s*)?(?:<div[^>]*>\s*)?(?:<a[^>]*>\s*)?(?:<button[^>]*>\s*)?(?:<span[^>]*>\s*)?\[?Show Hint\]?(?:<\/span>\s*)?(?:<\/button>\s*)?(?:<\/a>\s*)?(?:<\/div>\s*)?(?:<\/p>\s*)?(?:<br\s*\/?>\s*)*/i;
             const match = outHTML.match(triggerRegex);
-            
+
             if (match && !outHTML.includes('btn-hint-sexy')) {
                 const splitPos = match.index;
                 const beforeHint = outHTML.substring(0, splitPos);
                 let afterHint = outHTML.substring(splitPos + match[0].length);
-                
+
                 afterHint = afterHint.replace(/^(<br\s*\/?>|<\/?p>\s*|\s)+/i, '');
 
                 const hintId = 'hint_' + Math.random().toString(36).substr(2, 9);
                 nbmeHints[hintId] = afterHint;
-                
+
                 const btn = `<div class="ma-hint-wrapper" style="margin: 16px 0;"><button class="btn-hint-sexy" type="button" onclick="showSexyHint('${hintId}')">💡 Show Hint</button></div>`;
-                
+
                 outHTML = beforeHint + btn;
             }
 
@@ -2729,60 +2636,60 @@
             modal.classList.add('show');
         }
 
-        function stripStyles(h) { 
-            if (!h) return ''; const t = document.createElement('div'); t.innerHTML = String(h); 
-            t.querySelectorAll('*').forEach(e => { 
+        function stripStyles(h) {
+            if (!h) return ''; const t = document.createElement('div'); t.innerHTML = String(h);
+            t.querySelectorAll('*').forEach(e => {
                 const cls = e.getAttribute('class') || '';
                 if(!cls.includes('btn-hint-sexy') && !cls.includes('ma-hint-wrapper') && cls !== 'option-image') {
-                    e.removeAttribute('style'); e.removeAttribute('bgcolor'); e.removeAttribute('color'); 
-                    if (e.hasAttribute('class')) e.removeAttribute('class'); 
+                    e.removeAttribute('style'); e.removeAttribute('bgcolor'); e.removeAttribute('color');
+                    if (e.hasAttribute('class')) e.removeAttribute('class');
                 }
-            }); 
-            return t.innerHTML; 
+            });
+            return t.innerHTML;
         }
 
-        function processImagesInHTML(html) { 
-            if (!html || !currentDatabasePath) return String(html); const t = document.createElement('div'); t.innerHTML = String(html); 
-            t.querySelectorAll('img').forEach(img => { 
-                const src = img.getAttribute('src'); 
-                if (src && !src.startsWith('http') && !src.startsWith('assets/Data/') && !src.startsWith('./assets/Data/')) { 
-                    const fn = src.split('/').pop().split('\\').pop(); 
-                    img.setAttribute('src', `./assets/Data/${currentDatabasePath}/media/${fn}`); 
-                } 
-                img.classList.add('option-image'); 
-                img.setAttribute('onclick', 'openMediaModal(this.src, this.alt)'); 
-            }); 
-            return t.innerHTML; 
+        function processImagesInHTML(html) {
+            if (!html || !currentDatabasePath) return String(html); const t = document.createElement('div'); t.innerHTML = String(html);
+            t.querySelectorAll('img').forEach(img => {
+                const src = img.getAttribute('src');
+                if (src && !src.startsWith('http') && !src.startsWith('assets/Data/') && !src.startsWith('./assets/Data/')) {
+                    const fn = src.split('/').pop().split('\\').pop();
+                    img.setAttribute('src', `./assets/Data/${currentDatabasePath}/media/${fn}`);
+                }
+                img.classList.add('option-image');
+                img.setAttribute('onclick', 'openMediaModal(this.src, this.alt)');
+            });
+            return t.innerHTML;
         }
 
         function processContent(html) {
             if (!html) return '';
             let processed = String(html);
-            processed = formatNBMEHint(processed); 
-            processed = stripStyles(processed);            
-            processed = processImagesInHTML(processed);    
+            processed = formatNBMEHint(processed);
+            processed = stripStyles(processed);
+            processed = processImagesInHTML(processed);
             return processed;
         }
 
-        function openMediaModal(src, cap) { 
-            const mc = document.getElementById('modal-content'); 
-            mc.innerHTML = `<img src="${src}">`; 
-            if (cap && cap !== 'null' && cap !== 'undefined') mc.innerHTML += `<div class="modal-caption" style="color:#fff; text-align:center; padding:10px;">${cap}</div>`; 
-            document.getElementById('media-modal').classList.add('show'); 
+        function openMediaModal(src, cap) {
+            const mc = document.getElementById('modal-content');
+            mc.innerHTML = `<img src="${src}">`;
+            if (cap && cap !== 'null' && cap !== 'undefined') mc.innerHTML += `<div class="modal-caption" style="color:#fff; text-align:center; padding:10px;">${cap}</div>`;
+            document.getElementById('media-modal').classList.add('show');
         }
 
         // --- Core UI Display Generator ---
         async function displayQuestion() {
             try {
                 const qObj = currentQuestions[currentQuestionIndex]; if (!qObj) return;
-                await loadDatabaseForPath(qObj.dbPath); 
-                const qData = getQuestionData(qObj.id); 
+                await loadDatabaseForPath(qObj.dbPath);
+                const qData = getQuestionData(qObj.id);
                 currentQData = qData;
-                
-                const isLast = currentQuestionIndex === currentQuestions.length - 1; 
+
+                const isLast = currentQuestionIndex === currentQuestions.length - 1;
                 const isExam = currentMode === 'exam';
                 if (!isExam) learningAnswered = (userAnswers[qObj.id] !== undefined);
-                
+
                 currentQuestionStorageKey = `ma_hl_${qObj.dbPath}_${qObj.id}`;
                 const flagKey = `MA_FLAG|||${qObj.dbPath}|||${qObj.id}`; const isFlagged = localStorage.getItem(flagKey) === 'true';
                 const noteKey = `MA_NOTE|||${qObj.dbPath}|||${qObj.id}`; const hasNote = !!localStorage.getItem(noteKey);
@@ -2794,7 +2701,6 @@
 
                 let html;
                 if (!isExam) {
-                    // ============ UWORLD-STYLE LEARNING MODE ============
                     const total = currentQuestions.length;
                     const idx = currentQuestionIndex + 1;
                     html = `
@@ -2936,7 +2842,6 @@
                     </div>`;
                 }
 
-                // Handle Mobile Bottom Nav dynamic generation (Exam Mode only — Learning has its own NBME toolbar)
                 let bottomNavHtml = `
                     <button ${currentQuestionIndex === 0 || (isExam && examTimeExpired) ? 'disabled' : ''} onclick="navQ(-1)">⏮ Prev</button>
                     ${isExam ? '<button id="btn-suspend" onclick="suspendExam()">⏸ <span class="lbl">Suspend</span></button>' : ''}
@@ -2964,8 +2869,8 @@
                 }
                 mobileNav.innerHTML = bottomNavHtml;
                 mobileNav.style.display = 'flex';
-                
-                if (isExam) updateTimerDisplay(); 
+
+                if (isExam) updateTimerDisplay();
                 if (typeof maLoadHighlights === 'function') setTimeout(maLoadHighlights, 50);
             } catch(e) { console.error(e); }
         }
@@ -2982,18 +2887,18 @@
                 if (selectedOpt) selectedOpt.classList.add('selected');
                 if (typeof uwRenderSidebar === 'function') uwRenderSidebar();
             } else {
-                if (learningAnswered) return; 
-                learningAnswered = true; 
-                userAnswers[qId] = { answerId: ansId, isCorrect: isCorrect }; 
+                if (learningAnswered) return;
+                learningAnswered = true;
+                userAnswers[qId] = { answerId: ansId, isCorrect: isCorrect };
                 const comm = document.getElementById(`commentary-${qId}`);
-                if (comm) comm.classList.add('show'); 
-                currentQData.answers.forEach(a => { 
-                    const o = document.querySelector(`.answer-option[data-option-id="${a.answerID}"]`); 
+                if (comm) comm.classList.add('show');
+                currentQData.answers.forEach(a => {
+                    const o = document.querySelector(`.answer-option[data-option-id="${a.answerID}"]`);
                     if(o) {
-                        if (a.isCorrect) o.classList.add('correct'); 
-                        if (ansId === a.answerID && !a.isCorrect) o.classList.add('incorrect'); 
+                        if (a.isCorrect) o.classList.add('correct');
+                        if (ansId === a.answerID && !a.isCorrect) o.classList.add('incorrect');
                     }
-                }); 
+                });
                 if (typeof maLoadHighlights === 'function') setTimeout(maLoadHighlights, 50);
                 if (typeof uwRenderSidebar === 'function') uwRenderSidebar();
                 setTimeout(()=> {
@@ -3005,85 +2910,85 @@
             }
         }
 
-        async function navQ(dir) { 
-            if (isNavigating || (currentMode === 'exam' && examTimeExpired)) return; 
-            let newIdx = currentQuestionIndex + dir; 
-            if (newIdx >= 0 && newIdx < currentQuestions.length) { 
-                isNavigating = true; 
-                currentQuestionIndex = newIdx; 
+        async function navQ(dir) {
+            if (isNavigating || (currentMode === 'exam' && examTimeExpired)) return;
+            let newIdx = currentQuestionIndex + dir;
+            if (newIdx >= 0 && newIdx < currentQuestions.length) {
+                isNavigating = true;
+                currentQuestionIndex = newIdx;
                 try {
-                    await displayQuestion(); 
-                    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+                    await displayQuestion();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 } finally {
-                    isNavigating = false; 
+                    isNavigating = false;
                 }
-            } 
+            }
         }
 
-        async function seekQ(e) { 
-            if (isNavigating || (currentMode === 'exam' && examTimeExpired)) return; 
-            const p = (e.clientX - e.currentTarget.getBoundingClientRect().left) / e.currentTarget.getBoundingClientRect().width; 
-            let newIdx = Math.floor(p * currentQuestions.length); 
-            if (newIdx >= 0 && newIdx < currentQuestions.length) { 
-                isNavigating = true; currentQuestionIndex = newIdx; 
+        async function seekQ(e) {
+            if (isNavigating || (currentMode === 'exam' && examTimeExpired)) return;
+            const p = (e.clientX - e.currentTarget.getBoundingClientRect().left) / e.currentTarget.getBoundingClientRect().width;
+            let newIdx = Math.floor(p * currentQuestions.length);
+            if (newIdx >= 0 && newIdx < currentQuestions.length) {
+                isNavigating = true; currentQuestionIndex = newIdx;
                 try {
-                    await displayQuestion(); 
-                    window.scrollTo({ top: 0, behavior: 'smooth' }); 
+                    await displayQuestion();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 } finally {
-                    isNavigating = false; 
+                    isNavigating = false;
                 }
-            } 
+            }
         }
 
-        function toggleFlag(flagKey, btn) { 
-            const isFlagged = btn.classList.contains('active-flag'); 
-            if (isFlagged) { btn.classList.remove('active-flag'); btn.querySelector('.lbl').textContent = 'Flag'; localStorage.removeItem(flagKey); } 
-            else { btn.classList.add('active-flag'); btn.querySelector('.lbl').textContent = 'Flagged'; localStorage.setItem(flagKey, 'true'); } 
+        function toggleFlag(flagKey, btn) {
+            const isFlagged = btn.classList.contains('active-flag');
+            if (isFlagged) { btn.classList.remove('active-flag'); btn.querySelector('.lbl').textContent = 'Flag'; localStorage.removeItem(flagKey); }
+            else { btn.classList.add('active-flag'); btn.querySelector('.lbl').textContent = 'Flagged'; localStorage.setItem(flagKey, 'true'); }
         }
-        
-        function openNote(noteKey) { 
-            currentNoteId = noteKey; 
-            const t = document.getElementById('ma-note-input'); 
-            t.value = localStorage.getItem(noteKey) || ''; 
-            document.getElementById('modal-notes').classList.add('show'); 
-            setTimeout(() => t.focus(), 100); 
+
+        function openNote(noteKey) {
+            currentNoteId = noteKey;
+            const t = document.getElementById('ma-note-input');
+            t.value = localStorage.getItem(noteKey) || '';
+            document.getElementById('modal-notes').classList.add('show');
+            setTimeout(() => t.focus(), 100);
         }
-        
-        document.getElementById('ma-note-input').oninput = function () { 
-            if (!currentNoteId) return; 
-            const val = this.value; 
-            const btns = document.querySelectorAll(`.note-btn[onclick*="${currentNoteId}"]`); 
-            if (val.trim() === '') { localStorage.removeItem(currentNoteId); btns.forEach(b => b.classList.remove('active-note')); } 
-            else { localStorage.setItem(currentNoteId, val); btns.forEach(b => b.classList.add('active-note')); } 
+
+        document.getElementById('ma-note-input').oninput = function () {
+            if (!currentNoteId) return;
+            const val = this.value;
+            const btns = document.querySelectorAll(`.note-btn[onclick*="${currentNoteId}"]`);
+            if (val.trim() === '') { localStorage.removeItem(currentNoteId); btns.forEach(b => b.classList.remove('active-note')); }
+            else { localStorage.setItem(currentNoteId, val); btns.forEach(b => b.classList.add('active-note')); }
         };
 
         // --- Results Logic & UI Matching ---
         function showExamResults() {
-            if (examTimer) clearInterval(examTimer); 
-            document.getElementById('exam-questions').style.display = 'none'; 
-            document.getElementById('exam-results').style.display = 'block'; 
+            if (examTimer) clearInterval(examTimer);
+            document.getElementById('exam-questions').style.display = 'none';
+            document.getElementById('exam-results').style.display = 'block';
             document.getElementById('time-up-modal').classList.remove('show');
             const bottomNav = document.getElementById('mobile-bottom-nav');
             if(bottomNav) bottomNav.style.display = 'none';
-            
-            let correct = 0, incorrect = 0, unans = 0; 
-            currentQuestions.forEach(q => { 
-                if (userAnswers[q.id]) { 
-                    if (userAnswers[q.id].isCorrect) correct++; else incorrect++; 
-                } else { unans++; } 
+
+            let correct = 0, incorrect = 0, unans = 0;
+            currentQuestions.forEach(q => {
+                if (userAnswers[q.id]) {
+                    if (userAnswers[q.id].isCorrect) correct++; else incorrect++;
+                } else { unans++; }
             });
-            
-            const tot = currentQuestions.length; 
-            const cP = tot ? Math.round((correct / tot) * 100) : 0; 
-            const iP = tot ? Math.round((incorrect / tot) * 100) : 0; 
+
+            const tot = currentQuestions.length;
+            const cP = tot ? Math.round((correct / tot) * 100) : 0;
+            const iP = tot ? Math.round((incorrect / tot) * 100) : 0;
             const uP = tot ? (100 - cP - iP) : 0;
-            
-            let dS = 0; 
-            if (examSettings && examSettings.startedAt) { dS = Math.max(1, Math.round((Date.now() - examSettings.startedAt) / 1000)); } 
+
+            let dS = 0;
+            if (examSettings && examSettings.startedAt) { dS = Math.max(1, Math.round((Date.now() - examSettings.startedAt) / 1000)); }
             else if (examSettings && typeof totalTimeRemaining === 'number') { dS = Math.max(1, examSettings.totalTime - totalTimeRemaining); }
-            
-            const m = Math.floor(dS / 60), s = dS % 60; 
-            const dT = m <= 0 ? `${s}s` : `${m}m ${s.toString().padStart(2, "0")}s`; 
+
+            const m = Math.floor(dS / 60), s = dS % 60;
+            const dT = m <= 0 ? `${s}s` : `${m}m ${s.toString().padStart(2, "0")}s`;
             const avgPerQuestion = tot ? Math.round(dS / tot) : 0;
 
             document.getElementById('exam-results').innerHTML = `
@@ -3118,20 +3023,20 @@
             <div class="question-list" id="question-list"></div>
             <div id="question-review-container"></div>
             <button class="btn btn-primary" onclick="resetExamMode()" style="margin-top:30px; width:100%; padding:14px; font-size:16px;">Back to Dashboard</button>`;
-            
+
             const qList = document.getElementById('question-list');
-            currentQuestions.forEach((qObj, i) => { 
-                const item = document.createElement('div'); item.className = 'question-item'; 
-                if (userAnswers[qObj.id]) { 
-                    if (userAnswers[qObj.id].isCorrect) item.classList.add('correct'); 
-                    else item.classList.add('incorrect'); 
-                } else { item.classList.add('unanswered'); } 
-                const isFlagged = localStorage.getItem(`MA_FLAG|||${qObj.dbPath}|||${qObj.id}`) === 'true'; 
-                item.innerHTML = `Q ${i + 1} ${isFlagged ? '<span style="position:absolute; top:-6px; right:-6px; font-size:14px;">🚩</span>' : ''}`; 
-                item.onclick = () => showQReview(qObj, i); 
-                qList.appendChild(item); 
+            currentQuestions.forEach((qObj, i) => {
+                const item = document.createElement('div'); item.className = 'question-item';
+                if (userAnswers[qObj.id]) {
+                    if (userAnswers[qObj.id].isCorrect) item.classList.add('correct');
+                    else item.classList.add('incorrect');
+                } else { item.classList.add('unanswered'); }
+                const isFlagged = localStorage.getItem(`MA_FLAG|||${qObj.dbPath}|||${qObj.id}`) === 'true';
+                item.innerHTML = `Q ${i + 1} ${isFlagged ? '<span style="position:absolute; top:-6px; right:-6px; font-size:14px;">🚩</span>' : ''}`;
+                item.onclick = () => showQReview(qObj, i);
+                qList.appendChild(item);
             });
-            
+
             localStorage.removeItem('ma_suspended_exam'); loadDashboardActivity();
         }
 
@@ -3155,63 +3060,62 @@
             document.getElementById('question-review-container').scrollIntoView({ behavior: 'smooth' }); if (typeof maLoadHighlights === 'function') setTimeout(maLoadHighlights, 50);
         }
 
-        function getQuestionData(id) { 
-            const d = {}; 
-            const res1 = currentDatabase.exec(`SELECT question, explanation, corrAns FROM Questions WHERE id=${id}`); 
-            if (res1.length > 0 && res1[0].values.length > 0) { 
-                d.question = String(res1[0].values[0][0] || ''); 
-                d.explanation = String(res1[0].values[0][1] || ''); 
-                d.correctAnswerId = parseInt(res1[0].values[0][2]); 
-            } 
-            const res2 = currentDatabase.exec(`SELECT answerID, answerText FROM Answers WHERE qId=${id} ORDER BY answerID`); d.answers = []; 
-            if (res2.length > 0 && res2[0].values.length > 0) { 
-                res2[0].values.forEach(r => { d.answers.push({ answerID: parseInt(r[0]), answerText: String(r[1] || ''), isCorrect: parseInt(r[0]) === d.correctAnswerId }); }); 
-            } 
-            return d; 
+        function getQuestionData(id) {
+            const d = {};
+            const res1 = currentDatabase.exec(`SELECT question, explanation, corrAns FROM Questions WHERE id=${id}`);
+            if (res1.length > 0 && res1[0].values.length > 0) {
+                d.question = String(res1[0].values[0][0] || '');
+                d.explanation = String(res1[0].values[0][1] || '');
+                d.correctAnswerId = parseInt(res1[0].values[0][2]);
+            }
+            const res2 = currentDatabase.exec(`SELECT answerID, answerText FROM Answers WHERE qId=${id} ORDER BY answerID`); d.answers = [];
+            if (res2.length > 0 && res2[0].values.length > 0) {
+                res2[0].values.forEach(r => { d.answers.push({ answerID: parseInt(r[0]), answerText: String(r[1] || ''), isCorrect: parseInt(r[0]) === d.correctAnswerId }); });
+            }
+            return d;
         }
 
-        function generateAnswerOptionsHTML(ans, qId, isExam, disabled) { 
-            if (!ans || !Array.isArray(ans)) return ''; 
-            const hasAnswered = userAnswers[qId] !== undefined; 
-            return ans.map((a, i) => { 
-                const l = String.fromCharCode(65 + i); let c = 'answer-option'; 
-                if (disabled) c += ' disabled'; 
-                if (isExam) { 
-                    if (hasAnswered && userAnswers[qId].answerId === a.answerID) c += ' selected'; 
-                } else { 
-                    if (hasAnswered) { 
-                        if (a.isCorrect) c += ' correct'; 
-                        if (userAnswers[qId].answerId === a.answerID && !a.isCorrect) c += ' incorrect'; 
-                    } 
-                } 
-                return `<div class="${c}" data-option-id="${a.answerID}" onclick="selectOption('${a.answerID}', ${a.isCorrect})"><div class="option-letter">${l}</div><div class="option-content"><div class="option-text">${processContent(a.answerText || '')}</div></div></div>`; 
-            }).join(''); 
+        function generateAnswerOptionsHTML(ans, qId, isExam, disabled) {
+            if (!ans || !Array.isArray(ans)) return '';
+            const hasAnswered = userAnswers[qId] !== undefined;
+            return ans.map((a, i) => {
+                const l = String.fromCharCode(65 + i); let c = 'answer-option';
+                if (disabled) c += ' disabled';
+                if (isExam) {
+                    if (hasAnswered && userAnswers[qId].answerId === a.answerID) c += ' selected';
+                } else {
+                    if (hasAnswered) {
+                        if (a.isCorrect) c += ' correct';
+                        if (userAnswers[qId].answerId === a.answerID && !a.isCorrect) c += ' incorrect';
+                    }
+                }
+                return `<div class="${c}" data-option-id="${a.answerID}" onclick="selectOption('${a.answerID}', ${a.isCorrect})"><div class="option-letter">${l}</div><div class="option-content"><div class="option-text">${processContent(a.answerText || '')}</div></div></div>`;
+            }).join('');
         }
 
-        function generateReviewAnswerOptionsHTML(ans, userAns) { 
-            if (!ans || !Array.isArray(ans)) return ''; 
-            return ans.map((a, i) => { 
-                const l = String.fromCharCode(65 + i); let c = 'answer-option disabled'; 
-                if (a.isCorrect) c += ' correct'; 
-                if (userAns && userAns.answerId === a.answerID && !a.isCorrect) c += ' incorrect'; 
-                return `<div class="${c}" data-option-id="${a.answerID}"><div class="option-letter">${l}</div><div class="option-content"><div class="option-text">${processContent(a.answerText || '')}</div></div></div>`; 
-            }).join(''); 
+        function generateReviewAnswerOptionsHTML(ans, userAns) {
+            if (!ans || !Array.isArray(ans)) return '';
+            return ans.map((a, i) => {
+                const l = String.fromCharCode(65 + i); let c = 'answer-option disabled';
+                if (a.isCorrect) c += ' correct';
+                if (userAns && userAns.answerId === a.answerID && !a.isCorrect) c += ' incorrect';
+                return `<div class="${c}" data-option-id="${a.answerID}"><div class="option-letter">${l}</div><div class="option-content"><div class="option-text">${processContent(a.answerText || '')}</div></div></div>`;
+            }).join('');
         }
 
-        document.addEventListener('contextmenu', (e) => { 
-            const opt = e.target.closest('.answer-option'); const isQ = document.querySelector('.question-card'); 
-            if (opt && isQ) { 
-                e.preventDefault(); 
-                if (!opt.classList.contains('selected') && !opt.classList.contains('correct') && !opt.classList.contains('incorrect') && !opt.classList.contains('disabled')) { 
-                    opt.classList.toggle('eliminated'); 
-                } 
-            } 
+        document.addEventListener('contextmenu', (e) => {
+            const opt = e.target.closest('.answer-option'); const isQ = document.querySelector('.question-card');
+            if (opt && isQ) {
+                e.preventDefault();
+                if (!opt.classList.contains('selected') && !opt.classList.contains('correct') && !opt.classList.contains('incorrect') && !opt.classList.contains('disabled')) {
+                    opt.classList.toggle('eliminated');
+                }
+            }
         });
         document.addEventListener('click', (e) => { const opt = e.target.closest('.answer-option'); if (opt && opt.classList.contains('eliminated')) opt.classList.remove('eliminated'); });
-        
+
         document.addEventListener('keydown', (e) => {
             if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || isNavigating) return;
-            // Active question container — match either the new uw-skin layout OR the old .question-card
             const qCard = document.querySelector('.uw-skin .uw-main') || document.querySelector('.question-card');
             if (qCard) {
                 const k = e.key.toUpperCase(); const opts = document.querySelectorAll('.answer-option');
@@ -3219,7 +3123,6 @@
                 if (map[k] !== undefined && opts[map[k]] && !opts[map[k]].classList.contains('disabled')) {
                     opts[map[k]].classList.remove('eliminated'); opts[map[k]].click();
                 }
-                // navQ() works in Learning; in form 29-style code paths the buttons use previous/nextLearningQuestion()
                 const isLearning = (typeof currentMode !== 'undefined' && currentMode === 'learning');
                 const navNext = () => { if (typeof navQ === 'function') navQ(1); else if (isLearning && typeof nextLearningQuestion === 'function') nextLearningQuestion(); };
                 const navPrev = () => { if (typeof navQ === 'function') navQ(-1); else if (isLearning && typeof previousLearningQuestion === 'function') previousLearningQuestion(); };
@@ -3231,40 +3134,40 @@
 
         // --- Pro Highlighter Module ---
         function maApplyHighlight(colorClass) { if (!currentHlRange || !activeHlContainer) return; const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(currentHlRange); activeHlContainer.setAttribute('contenteditable', 'true'); activeHlContainer.focus(); const magicHex = "#ff00fe"; document.execCommand("styleWithCSS", false, true); document.execCommand("hiliteColor", false, magicHex); if (!document.queryCommandSupported("hiliteColor")) document.execCommand("backColor", false, magicHex); activeHlContainer.removeAttribute('contenteditable'); activeHlContainer.querySelectorAll(`[style*="${magicHex}"], [style*="rgb(255, 0, 254)"]`).forEach(span => { span.removeAttribute('style'); span.className = colorClass; }); sel.removeAllRanges(); document.getElementById('ma-hl-palette').style.display = 'none'; maSaveHighlights(); }
-        
+
         function maClearHighlights() { if (!currentHlRange || !activeHlContainer) return; const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(currentHlRange); activeHlContainer.setAttribute('contenteditable', 'true'); activeHlContainer.focus(); document.execCommand("styleWithCSS", false, true); document.execCommand("hiliteColor", false, "transparent"); if (!document.queryCommandSupported("hiliteColor")) document.execCommand("backColor", false, "transparent"); activeHlContainer.removeAttribute('contenteditable'); activeHlContainer.querySelectorAll('span[class^="hl-"]').forEach(span => { if (sel.containsNode(span, true) || currentHlRange.intersectsNode(span)) { const parent = span.parentNode; while (span.firstChild) parent.insertBefore(span.firstChild, span); parent.removeChild(span); } }); activeHlContainer.querySelectorAll('span').forEach(span => { if (span.style.backgroundColor === "transparent" || span.style.backgroundColor === "rgba(0, 0, 0, 0)") { const p = span.parentNode; while (span.firstChild) p.insertBefore(span.firstChild, span); p.removeChild(span); } }); sel.removeAllRanges(); document.getElementById('ma-hl-palette').style.display = 'none'; maSaveHighlights(); }
-        
+
         function maSaveHighlights() { if (!currentQuestionStorageKey) return; const stem = document.querySelector('.question-stem'); const comm = document.querySelector('.commentary-content'); if (stem) localStorage.setItem(currentQuestionStorageKey + '_stem', stem.innerHTML); if (comm) localStorage.setItem(currentQuestionStorageKey + '_comm', comm.innerHTML); document.querySelectorAll('.answer-option').forEach(opt => { const id = opt.getAttribute('data-option-id'); const txt = opt.querySelector('.option-text'); if (id && txt) localStorage.setItem(currentQuestionStorageKey + '_opt_' + id, txt.innerHTML); }); }
-        
+
         maLoadHighlights = function() { if (!currentQuestionStorageKey) return; const stem = document.querySelector('.question-stem'); const comm = document.querySelector('.commentary-content'); if (stem) { const sv = localStorage.getItem(currentQuestionStorageKey + '_stem'); if (sv) stem.innerHTML = sv; } if (comm) { const sv = localStorage.getItem(currentQuestionStorageKey + '_comm'); if (sv) comm.innerHTML = sv; } document.querySelectorAll('.answer-option').forEach(opt => { const id = opt.getAttribute('data-option-id'); const txt = opt.querySelector('.option-text'); if (id && txt) { const sv = localStorage.getItem(currentQuestionStorageKey + '_opt_' + id); if (sv) txt.innerHTML = sv; } }); document.querySelectorAll('.question-stem img, .commentary-content img, .option-text img').forEach(img => { img.onclick = null; img.setAttribute('onclick', 'openMediaModal(this.src, this.alt)'); }); };
-        
+
         let currentHlRange = null, activeHlContainer = null;
         (function () {
-            const hlPalette = document.getElementById('ma-hl-palette'); 
-            const showPalette = () => { 
-                const sel = window.getSelection(); 
-                if (!sel || sel.isCollapsed || sel.rangeCount === 0 || sel.toString().trim() === '') { hlPalette.style.display = 'none'; return; } 
-                const range = sel.getRangeAt(0); let node = range.commonAncestorContainer; if (node.nodeType === 3) node = node.parentNode; 
-                const validArea = node.closest('.question-stem, .option-text, .commentary-content'); 
-                if (!validArea) { hlPalette.style.display = 'none'; return; } 
-                activeHlContainer = validArea; currentHlRange = range.cloneRange(); 
-                const rect = range.getBoundingClientRect(); 
-                let top = rect.top + window.scrollY - hlPalette.offsetHeight - 14; 
-                let left = rect.left + window.scrollX + (rect.width / 2) - (hlPalette.offsetWidth / 2); 
-                if (top < window.scrollY + 10) top = rect.bottom + window.scrollY + 14; 
-                if (left < 10) left = 10; 
+            const hlPalette = document.getElementById('ma-hl-palette');
+            const showPalette = () => {
+                const sel = window.getSelection();
+                if (!sel || sel.isCollapsed || sel.rangeCount === 0 || sel.toString().trim() === '') { hlPalette.style.display = 'none'; return; }
+                const range = sel.getRangeAt(0); let node = range.commonAncestorContainer; if (node.nodeType === 3) node = node.parentNode;
+                const validArea = node.closest('.question-stem, .option-text, .commentary-content');
+                if (!validArea) { hlPalette.style.display = 'none'; return; }
+                activeHlContainer = validArea; currentHlRange = range.cloneRange();
+                const rect = range.getBoundingClientRect();
+                let top = rect.top + window.scrollY - hlPalette.offsetHeight - 14;
+                let left = rect.left + window.scrollX + (rect.width / 2) - (hlPalette.offsetWidth / 2);
+                if (top < window.scrollY + 10) top = rect.bottom + window.scrollY + 14;
+                if (left < 10) left = 10;
                 if (left + hlPalette.offsetWidth > window.innerWidth) left = window.innerWidth - hlPalette.offsetWidth - 10;
-                hlPalette.style.display = 'flex'; hlPalette.style.top = top + 'px'; hlPalette.style.left = left + 'px'; 
+                hlPalette.style.display = 'flex'; hlPalette.style.top = top + 'px'; hlPalette.style.left = left + 'px';
             };
-            
+
             document.addEventListener('selectionchange', () => {
                 if(document.activeElement && (document.activeElement.tagName === 'TEXTAREA' || document.activeElement.tagName === 'INPUT')) return;
                 setTimeout(showPalette, 100);
             });
 
-            document.querySelector('.content').addEventListener('mouseup', (e) => { if (hlPalette.contains(e.target)) return; setTimeout(showPalette, 10); }); 
-            document.querySelector('.content').addEventListener('touchend', (e) => { if (hlPalette.contains(e.target)) return; setTimeout(showPalette, 200); }, {passive: true}); 
-            document.addEventListener('mousedown', (e) => { if (!hlPalette.contains(e.target) && window.getSelection().isCollapsed) hlPalette.style.display = 'none'; }); 
+            document.querySelector('.content').addEventListener('mouseup', (e) => { if (hlPalette.contains(e.target)) return; setTimeout(showPalette, 10); });
+            document.querySelector('.content').addEventListener('touchend', (e) => { if (hlPalette.contains(e.target)) return; setTimeout(showPalette, 200); }, {passive: true});
+            document.addEventListener('mousedown', (e) => { if (!hlPalette.contains(e.target) && window.getSelection().isCollapsed) hlPalette.style.display = 'none'; });
             document.addEventListener('touchstart', (e) => { if (!hlPalette.contains(e.target) && window.getSelection().isCollapsed) hlPalette.style.display = 'none'; }, {passive:true});
             hlPalette.addEventListener('mousedown', (e) => { e.preventDefault(); });
             hlPalette.addEventListener('touchstart', (e) => { e.preventDefault(); }, {passive:false});
